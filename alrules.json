@@ -1,0 +1,16 @@
+{
+    "name":"Curabis egne regler",
+    "description":"Regler for denne app",
+    "rules":[
+        {
+            "id": "AA0214",
+            "action":"hidden",
+            "justification" : "I har en bug i VS code... der er en modify..."
+        },
+        {
+            "id" : "AA0432",
+            "action" : "hidden",
+            "justification" : "we know it..."
+        }
+    ]
+}

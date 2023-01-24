@@ -1,5 +1,8 @@
 
 
+/// <summary>
+/// Table C5 LedTable (ID 51863).
+/// </summary>
 table 51863 "C5 LedTable"
 {
     ReplicateData = false;
