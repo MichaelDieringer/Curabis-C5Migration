@@ -174,6 +174,10 @@ table 51863 "C5 LedTable"
         {
             Caption = 'Opening account';
         }
+        field(40; OpeningDate; Date)
+        {
+            Caption = 'Opening date';
+        }
     }
 
     keys

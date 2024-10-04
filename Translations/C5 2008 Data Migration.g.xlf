@@ -2138,6 +2138,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 LedTable - Field OpeningAccount - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4032886559 - Field 861194076 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opening date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table C5 LedTable - Field OpeningDate - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 4032886559 - Field 1834324738 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purpose</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2243,6 +2248,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 LedTrans - Field Centre - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3594340523 - Field 468980696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Counter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table C5 LedTrans - Field Counter - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3594340523 - Field 3425251533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Created by</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2252,6 +2262,11 @@
           <source>Currency</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 LedTrans - Field Currency - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3594340523 - Field 306222154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table C5 LedTrans - Field Date2 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3594340523 - Field 4115250733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Date</source>

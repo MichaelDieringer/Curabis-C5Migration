@@ -114,6 +114,14 @@ table 51897 "C5 LedTrans"
         {
             Caption = 'Settlement period';
         }
+        field(27; Counter; Integer)
+        {
+            Caption = 'Counter';
+        }
+        field(28; Date2; Date)
+        {
+            Caption = 'Date 2';
+        }
     }
 
     keys

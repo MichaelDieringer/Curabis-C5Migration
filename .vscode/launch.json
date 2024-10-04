@@ -2,21 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Projct Management",
+            "name": "Fishes",
             "request": "launch",
             "type": "al",
-            "environmentType": "OnPrem",
-            "server": "http://bcserver/",
-            "serverInstance": "BC",
-            "authentication": "UserPassword",
-            // "startupObjectId": 22,
-            // "startupObjectType": "Page",
-            "schemaUpdateMode": "ForceSync",
-            "breakOnError": true,
+            "environmentType": "Sandbox",
+            "environmentName": "HandelBusinessCentral",
+            "tenant": "e17200ed-8ea6-4676-bd99-cb774a1ba60e",
+            "breakOnError": "All",
             "launchBrowser": true,
+            "schemaUpdateMode": "Synchronize",
             "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true,
-            "tenant": "default"
+            "enableSqlInformationDebugger": true
         }
     ]
 }
