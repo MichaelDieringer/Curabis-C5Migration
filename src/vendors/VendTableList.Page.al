@@ -320,7 +320,7 @@ page 51900 "C5 VendTable List"
     }
 
     var
-        C5MigrDashboardMgt: Codeunit "C5 Migr. Dashboard Mgt";
+        C5MigrDashboardMgt: Codeunit "C5 2008 Migr. Dashboard Mgt";
         MigrationErrorText: Text[250];
 
     trigger OnAfterGetRecord();

@@ -4,7 +4,7 @@
     "publisher":  "Curabis ApS",
     "brief":  "Migrates Data from Microsoft Dynamics C5 2008.",
     "description":  "Migrates Data from Microsoft Dynamics C5 2008.",
-    "version":  "23.0.37253.38256",
+    "version":  "23.1.0.5",
     "privacyStatement":  "https://go.microsoft.com/fwlink/?LinkId=724009",
     "EULA":  "https://go.microsoft.com/fwlink/?linkid=2009120",
     "help":  "https://learn.microsoft.com/da-dk/dynamics365/business-central/ui-extensions-c5-data-migration",

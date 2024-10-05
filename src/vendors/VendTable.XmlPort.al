@@ -119,7 +119,7 @@ xmlport 51881 "C5 VendTable"
     }
 
     var
-        C5HelperFunctions: Codeunit "C5 Helper Functions";
+        C5HelperFunctions: Codeunit "C5 2008 Helper Functions";
         DateFormatStringTxt: label 'yyyy/MM/dd', locked = true;
         Counter: Integer;
 }

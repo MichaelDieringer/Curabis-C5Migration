@@ -11,6 +11,7 @@
             "authentication": "UserPassword",
             "breakOnError": "All",
             "launchBrowser": true,
+            "schemaUpdateMode": "ForceSync",
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "tenant": "default",

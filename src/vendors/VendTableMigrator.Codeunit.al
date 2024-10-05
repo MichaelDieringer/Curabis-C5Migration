@@ -46,7 +46,7 @@ codeunit 51864 "C5 VendTable Migrator"
     local procedure OnMigrateVendorDimensions(VAR Sender: Codeunit "Vendor Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5VendTable: Record "C5 VendTable";
-        C5HelperFunctions: Codeunit "C5 Helper Functions";
+        C5HelperFunctions: Codeunit "C5 2008 Helper Functions";
     begin
         if RecordIdToMigrate.TableNo() <> Database::"C5 VendTable" then
             exit;
@@ -57,19 +57,19 @@ codeunit 51864 "C5 VendTable Migrator"
                 C5HelperFunctions.GetDepartmentDimensionCodeTxt(),
                 C5HelperFunctions.GetDepartmentDimensionDescTxt(),
                 C5VendTable.Department,
-                C5HelperFunctions.GetDimensionValueName(Database::"C5 Department", C5VendTable.Department));
+                C5HelperFunctions.GetDimensionValueName(Database::"C5 2008 Department", C5VendTable.Department));
         if C5VendTable.Centre <> '' then
             Sender.CreateDefaultDimensionAndRequirementsIfNeeded(
                 C5HelperFunctions.GetCostCenterDimensionCodeTxt(),
                 C5HelperFunctions.GetCostCenterDimensionDescTxt(),
                 C5VendTable.Centre,
-                C5HelperFunctions.GetDimensionValueName(Database::"C5 Centre", C5VendTable.Centre));
+                C5HelperFunctions.GetDimensionValueName(Database::"C5 2008 Centre", C5VendTable.Centre));
         if C5VendTable.Purpose <> '' then
             Sender.CreateDefaultDimensionAndRequirementsIfNeeded(
                 C5HelperFunctions.GetPurposeDimensionCodeTxt(),
                 C5HelperFunctions.GetPurposeDimensionDescTxt(),
                 C5VendTable.Purpose,
-                C5HelperFunctions.GetDimensionValueName(Database::"C5 Purpose", C5VendTable.Purpose));
+                C5HelperFunctions.GetDimensionValueName(Database::"C5 2008 Purpose", C5VendTable.Purpose));
     end;
 
     local procedure ClearPhoneNumber(OldPhoneNo: Text[20]): Text[20]
@@ -80,9 +80,9 @@ codeunit 51864 "C5 VendTable Migrator"
 
     local procedure MigrateVendorDetails(C5VendTable: Record "C5 VendTable"; VendorDataMigrationFacade: Codeunit "Vendor Data Migration Facade")
     var
-        C5VendContact: Record "C5 VendContact";
+        C5VendContact: Record "C5 2008 VendContact";
         Currency: Record Currency;
-        C5HelperFunctions: Codeunit "C5 Helper Functions";
+        C5HelperFunctions: Codeunit "C5 2008 Helper Functions";
         PostCode: Code[20];
         City: Text[30];
         CountryRegionCode: Code[10];
@@ -151,7 +151,7 @@ codeunit 51864 "C5 VendTable Migrator"
     var
         C5VendTable: Record "C5 VendTable";
         C5VendGroup: Record "C5 VendGroup";
-        C5LedTableMigrator: Codeunit "C5 LedTable Migrator";
+        C5LedTableMigrator: Codeunit "C5 2008 LedTable Migrator";
     begin
         if not ChartOfAccountsMigrated then
             exit;
@@ -184,8 +184,8 @@ codeunit 51864 "C5 VendTable Migrator"
         C5VendTrans: Record "C5 VendTrans";
         C5VendGroup: Record "C5 VendGroup";
         GLAccount: Record "G/L Account";
-        C5HelperFunctions: Codeunit "C5 Helper Functions";
-        C5LedTableMigrator: Codeunit "C5 LedTable Migrator";
+        C5HelperFunctions: Codeunit "C5 2008 Helper Functions";
+        C5LedTableMigrator: Codeunit "C5 2008 LedTable Migrator";
     begin
         if not ChartOfAccountsMigrated then
             exit;
@@ -226,23 +226,23 @@ codeunit 51864 "C5 VendTable Migrator"
                     C5HelperFunctions.GetDepartmentDimensionCodeTxt(),
                     C5HelperFunctions.GetDepartmentDimensionDescTxt(),
                     C5VendTrans.Department,
-                    C5HelperFunctions.GetDimensionValueName(Database::"C5 Department", C5VendTrans.Department));
+                    C5HelperFunctions.GetDimensionValueName(Database::"C5 2008 Department", C5VendTrans.Department));
                 Sender.SetGeneralJournalLineDimension(
                     C5HelperFunctions.GetCostCenterDimensionCodeTxt(),
                     C5HelperFunctions.GetCostCenterDimensionDescTxt(),
                     C5VendTrans.Centre,
-                    C5HelperFunctions.GetDimensionValueName(Database::"C5 Centre", C5VendTrans.Centre));
+                    C5HelperFunctions.GetDimensionValueName(Database::"C5 2008 Centre", C5VendTrans.Centre));
                 Sender.SetGeneralJournalLineDimension(
                     C5HelperFunctions.GetPurposeDimensionCodeTxt(),
                     C5HelperFunctions.GetPurposeDimensionDescTxt(),
                     C5VendTrans.Purpose,
-                    C5HelperFunctions.GetDimensionValueName(Database::"C5 Purpose", C5VendTrans.Purpose));
+                    C5HelperFunctions.GetDimensionValueName(Database::"C5 2008 Purpose", C5VendTrans.Purpose));
             until C5VendTrans.Next() = 0;
     end;
 
     local procedure CreatePaymentTermsIfNeeded(C5PaymentTxt: Text[10]): Code[10]
     var
-        C5Payment: Record "C5 Payment";
+        C5Payment: Record "C5 2008 Payment";
         DueDateAsDateFormula: DateFormula;
         DueDateCalculation: Text;
     begin
@@ -301,7 +301,7 @@ codeunit 51864 "C5 VendTable Migrator"
 
     local procedure CreateSalespersonPurchaserIfNeeded(C5EmployeeTxt: Code[10]): Code[20]
     var
-        C5Employee: Record "C5 Employee";
+        C5Employee: Record "C5 2008 Employee";
     begin
         if C5EmployeeTxt = '' then
             exit(C5EmployeeTxt);
@@ -318,7 +318,7 @@ codeunit 51864 "C5 VendTable Migrator"
 
     local procedure CreateShipmentMethodIfNeeded(C5DeliveryTxt: Code[10]): Code[10]
     var
-        C5Delivery: Record "C5 Delivery";
+        C5Delivery: Record "C5 2008 Delivery";
     begin
         if C5DeliveryTxt = '' then
             exit(C5DeliveryTxt);

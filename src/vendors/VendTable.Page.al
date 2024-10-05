@@ -326,7 +326,7 @@ page 51861 "C5 VendTable"
                     PromotedIsBig = true;
                     PromotedOnly = true;
                     Image = SalesPerson;
-                    RunObject = Page "C5 Employee";
+                    RunObject = Page "C5 2008 Employee";
                     RunPageLink = Employee = field(Purchaser);
                     RunPageMode = Edit;
                     ToolTip = 'Executes the Purchaser action.';
@@ -339,7 +339,7 @@ page 51861 "C5 VendTable"
                     PromotedIsBig = true;
                     PromotedOnly = true;
                     Image = Payment;
-                    RunObject = Page "C5 Payment";
+                    RunObject = Page "C5 2008 Payment";
                     RunPageLink = Payment = field(Payment);
                     RunPageMode = Edit;
                     ToolTip = 'Executes the Payment action.';
@@ -352,7 +352,7 @@ page 51861 "C5 VendTable"
                     PromotedIsBig = true;
                     PromotedOnly = true;
                     Image = Delivery;
-                    RunObject = Page "C5 Delivery";
+                    RunObject = Page "C5 2008 Delivery";
                     RunPageLink = Delivery = field(Delivery);
                     RunPageMode = Edit;
                     ToolTip = 'Executes the Delivery action.';
@@ -404,7 +404,7 @@ page 51861 "C5 VendTable"
                     PromotedIsBig = true;
                     PromotedOnly = true;
                     Image = ContactPerson;
-                    RunObject = Page "C5 VendContact";
+                    RunObject = Page "C5 2008 VendContact";
                     RunPageLink = Account = field(Account);
                     RunPageMode = Edit;
                     ToolTip = 'Executes the Contact Persons action.';
