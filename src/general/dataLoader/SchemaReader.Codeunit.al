@@ -1,4 +1,5 @@
-
+namespace CurabisC5.CurabisCMigration;
+using Microsoft.Utilities;
 
 /// <summary>
 /// Codeunit C5 Schema Reader (ID 51863).
@@ -15,10 +16,10 @@ codeunit 51863 "C5 Schema Reader"
 
     local procedure ProcessZipFile()
     var
-        NameValueBuffer: Record "Name/Value Buffer" temporary;
+        TempNameValueBuffer: Record "Name/Value Buffer" temporary;
     begin
-        Codeunit.Run(Codeunit::"C5 Unzip", NameValueBuffer);
-        ReadDefinitionFile(NameValueBuffer);
+        Codeunit.Run(Codeunit::"C5 Unzip", TempNameValueBuffer);
+        ReadDefinitionFile(TempNameValueBuffer);
     end;
 
     /// <summary>

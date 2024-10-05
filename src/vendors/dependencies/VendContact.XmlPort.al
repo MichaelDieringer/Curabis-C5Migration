@@ -1,3 +1,4 @@
+namespace CurabisC5.CurabisCMigration;
 
 
 xmlport 51901 "C5 VendContact"

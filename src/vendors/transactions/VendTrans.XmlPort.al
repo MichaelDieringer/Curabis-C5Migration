@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 xmlport 51894 "C5 VendTrans"
 {

@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 table 51882 "C5 Delivery"
 {

@@ -1,3 +1,5 @@
+namespace CurabisC5.CurabisCMigration;
+
 
 
 /// <summary>

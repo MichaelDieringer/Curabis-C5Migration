@@ -1,4 +1,5 @@
-
+namespace CurabisC5.CurabisCMigration;
+using System.Integration;
 
 /// <summary>
 /// Codeunit C5 Wizard Integration (ID 51861).
@@ -14,13 +15,13 @@ codeunit 51861 "C5 Wizard Integration"
         Instructions4Txt: Label '4. Return to this assisted setup guide, choose Next, and then import the zipped folder.';
         ThatsItTxt: Label 'To check the status of the data migration, go to the %1 page.', Comment = '%1=Page Name';
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnRegisterDataMigrator', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnRegisterDataMigrator, '', true, true)]
     local procedure OnRegisterDataMigratorRegisterC5DataMigrator(var DataMigratorRegistration: Record "Data Migrator Registration")
     begin
         DataMigratorRegistration.RegisterDataMigrator(GetCurrentCodeUnitNumber(), CopyStr(DataMigratorDescTxt, 1, 250));
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnGetInstructions', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnGetInstructions, '', true, true)]
     local procedure OnGetInstructionsGetC5Instructions(var DataMigratorRegistration: Record "Data Migrator Registration"; var Instructions: Text; var Handled: Boolean)
     var
         CRLF: Text[2];
@@ -38,7 +39,7 @@ codeunit 51861 "C5 Wizard Integration"
         Handled := true;
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnDataImport', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnDataImport, '', true, true)]
     local procedure OnDataImportImportC5Data(var DataMigratorRegistration: Record "Data Migrator Registration"; var Handled: Boolean)
     begin
         if DataMigratorRegistration."No." <> GetCurrentCodeUnitNumber() then
@@ -47,7 +48,7 @@ codeunit 51861 "C5 Wizard Integration"
         Handled := C5DataMigrationMgt.ImportC5Data();
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnSelectDataToApply', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnSelectDataToApply, '', true, true)]
     local procedure OnSelectDataToApplyCreateDataMigrationEntites(var DataMigratorRegistration: Record "Data Migrator Registration"; var DataMigrationEntity: Record "Data Migration Entity"; var Handled: Boolean)
     BEGIN
         IF DataMigratorRegistration."No." <> GetCurrentCodeUnitNumber() THEN
@@ -55,7 +56,7 @@ codeunit 51861 "C5 Wizard Integration"
         Handled := C5DataMigrationMgt.CreateDataMigrationEntites(DataMigrationEntity);
     END;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnApplySelectedData', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnApplySelectedData, '', true, true)]
     local procedure OnApplySelectedDataApplyC5Data(var DataMigratorRegistration: Record "Data Migrator Registration"; var DataMigrationEntity: Record "Data Migration Entity"; var Handled: Boolean)
     begin
         if DataMigratorRegistration."No." <> GetCurrentCodeUnitNumber() then
@@ -66,7 +67,7 @@ codeunit 51861 "C5 Wizard Integration"
         OnEntitiesToMigrateSelected(DataMigrationEntity);
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnShowThatsItMessage', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnShowThatsItMessage, '', true, true)]
     local procedure OnShowThatsItMessageShowC5ThatsItMessage(var DataMigratorRegistration: Record "Data Migrator Registration"; var Message: Text)
     var
         DataMigrationOverview: Page "Data Migration Overview";
@@ -77,7 +78,7 @@ codeunit 51861 "C5 Wizard Integration"
         Message := StrSubstNo(ThatsItTxt, DataMigrationOverview.Caption());
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnEnableTogglingDataMigrationOverviewPage', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnEnableTogglingDataMigrationOverviewPage, '', true, true)]
     local procedure OnEnableTogglingDataMigrationOverviewPage(var DataMigratorRegistration: Record "Data Migrator Registration"; var EnableTogglingOverviewPage: Boolean)
     begin
         if DataMigratorRegistration."No." <> GetCurrentCodeUnitNumber() then

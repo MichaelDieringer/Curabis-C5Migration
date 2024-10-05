@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 /// <summary>
 /// XmlPort C5 CustGroup (ID 51891).

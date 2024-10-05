@@ -1,3 +1,9 @@
 {
-    "al.codeAnalyzers": []
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+        "${CodeCop}",
+        "${UICop}",
+        "${PerTenantExtensionCop}"
+    ],
+    "al.ruleSetPath": "alrules.json"
 }

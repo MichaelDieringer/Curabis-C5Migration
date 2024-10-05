@@ -1,4 +1,6 @@
-
+namespace CurabisC5.CurabisCMigration;
+using Microsoft.Utilities;
+using System.IO;
 
 /// <summary>
 /// Codeunit C5 Unzip (ID 51869).
@@ -55,11 +57,6 @@ codeunit 51869 "C5 Unzip"
     /// </summary>
     [IntegrationEvent(false, false)]
     procedure OnUnzipFileError()
-    begin
-    end;
-
-    [IntegrationEvent(false, false)]
-    local procedure OnExtractFolderMissing()
     begin
     end;
 }

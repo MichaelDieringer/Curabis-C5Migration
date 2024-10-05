@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 table 51880 "C5 InvenPriceGroup"
 {

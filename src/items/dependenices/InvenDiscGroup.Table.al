@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 table 51866 "C5 InvenDiscGroup"
 {

@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 table 51868 "C5 Centre"
 {

@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 xmlport 51874 "C5 ItemTrackGroup"
 {

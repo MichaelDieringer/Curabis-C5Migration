@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 /// <summary>
 /// XmlPort C5 Delivery (ID 51865).

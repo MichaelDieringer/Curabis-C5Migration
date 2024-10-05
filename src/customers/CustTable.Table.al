@@ -1,4 +1,5 @@
-
+namespace CurabisC5.CurabisCMigration;
+using Microsoft.Sales.Customer;
 
 /// <summary>
 /// Table C5 CustTable (ID 51860).

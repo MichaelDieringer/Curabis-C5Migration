@@ -1,3 +1,4 @@
+namespace CurabisC5.CurabisCMigration;
 /// <summary>
 /// Table C5 Data Loader Status (ID 51902).
 /// </summary>

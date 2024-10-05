@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 
 /// <summary>
@@ -11,14 +11,25 @@ page 51883 "C5 CustDiscGroup"
     DeleteAllowed = false;
     InsertAllowed = false;
     Caption = 'C5 Customer Discount Groups';
+    ApplicationArea = All;
+    UsageCategory = None;
+
     layout
     {
         area(content)
         {
             group(General)
             {
-                field(DiscGroup; Rec.DiscGroup) { ApplicationArea = All; }
-                field(Comment; Rec.Comment) { ApplicationArea = All; }
+                field(DiscGroup; Rec.DiscGroup)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Discount group field.';
+                }
+                field(Comment; Rec.Comment)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Comment field.';
+                }
             }
         }
     }

@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 xmlport 51878 "C5 UnitCode"
 {

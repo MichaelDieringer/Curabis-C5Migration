@@ -1,3 +1,10 @@
+namespace CurabisC5.CurabisCMigration;
+using System.Integration;
+using Microsoft.Purchases.Vendor;
+using Microsoft.Inventory.Item;
+using Microsoft.Finance.GeneralLedger.Account;
+using Microsoft.Sales.Customer;
+
 codeunit 51872 "C5 Telemetry"
 {
     var
@@ -66,33 +73,38 @@ codeunit 51872 "C5 Telemetry"
         Session.LogMessage('00001K5', 'C5 Migration was selected.', Verbosity::Normal, DataClassification::SystemMetadata, TelemetryScope::ExtensionPublisher, 'Category', C5MigrationDashboardMgt.GetC5MigrationTypeTxt());
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"C5 Wizard Integration", 'OnEntitiesToMigrateSelected', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"C5 Wizard Integration", OnEntitiesToMigrateSelected, '', false, false)]
     local procedure OnEntitiesToMigrateSelectedSubscriber(var DataMigrationEntity: Record "Data Migration Entity")
     var
         C5MigrationDashboardMgt: Codeunit "C5 Migr. Dashboard Mgt";
         EntitiesToMigrateMessage: Text;
+        VendorLbl: Label 'vendor: %1; ', Comment = '%1 Vendors';
+        CustomerLbl: Label 'customer: %1; ', Comment = '%1 Customers';
+        GLAccLbl: Label 'G/L account: %1; ', Comment = '%1 G/L accounts';
+        ItemLbl: Label 'item: %1; ', Comment = '%1 Items';
+        C5LedgerEntriesLbl: Label 'C5 ledger entries: %1; ', Comment = '%1 C5 ledger entries';
     begin
         DataMigrationEntity.SetRange(Selected, true);
         DataMigrationEntity.SetRange("Table ID", Database::Vendor);
 
         if DataMigrationEntity.FindFirst() then
-            EntitiesToMigrateMessage += StrSubstNo('vendor: %1; ', DataMigrationEntity."No. of Records");
+            EntitiesToMigrateMessage += StrSubstNo(VendorLbl, DataMigrationEntity."No. of Records");
 
         DataMigrationEntity.SetRange("Table ID", Database::Customer);
         if DataMigrationEntity.FindFirst() then
-            EntitiesToMigrateMessage += StrSubstNo('customer: %1; ', DataMigrationEntity."No. of Records");
+            EntitiesToMigrateMessage += StrSubstNo(CustomerLbl, DataMigrationEntity."No. of Records");
 
         DataMigrationEntity.SetRange("Table ID", Database::"G/L Account");
         if DataMigrationEntity.FindFirst() then
-            EntitiesToMigrateMessage += StrSubstNo('gl_acc: %1; ', DataMigrationEntity."No. of Records");
+            EntitiesToMigrateMessage += StrSubstNo(GLAccLbl, DataMigrationEntity."No. of Records");
 
         DataMigrationEntity.SetRange("Table ID", Database::Item);
         if DataMigrationEntity.FindFirst() then
-            EntitiesToMigrateMessage += StrSubstNo('item: %1; ', DataMigrationEntity."No. of Records");
+            EntitiesToMigrateMessage += StrSubstNo(ItemLbl, DataMigrationEntity."No. of Records");
 
         DataMigrationEntity.SetRange("Table ID", Database::"C5 LedTrans");
         if DataMigrationEntity.FindFirst() then
-            EntitiesToMigrateMessage += StrSubstNo('C5_ledger_entries: %1; ', DataMigrationEntity."No. of Records");
+            EntitiesToMigrateMessage += StrSubstNo(C5LedgerEntriesLbl, DataMigrationEntity."No. of Records");
 
         Session.LogMessage('00001I1', EntitiesToMigrateMessage, Verbosity::Normal, DataClassification::SystemMetadata, TelemetryScope::ExtensionPublisher, 'Category', C5MigrationDashboardMgt.GetC5MigrationTypeTxt());
     end;

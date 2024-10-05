@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 xmlport 51862 "C5 CN8Code"
 {

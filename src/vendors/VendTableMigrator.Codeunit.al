@@ -1,4 +1,8 @@
-
+namespace CurabisC5.CurabisCMigration;
+using System.Integration;
+using Microsoft.Finance.Currency;
+using Microsoft.Finance.GeneralLedger.Account;
+using Microsoft.Purchases.Vendor;
 
 /// <summary>
 /// Codeunit C5 VendTable Migrator (ID 51864).
@@ -22,8 +26,8 @@ codeunit 51864 "C5 VendTable Migrator"
     /// </summary>
     /// <param name="VAR Sender">Codeunit "Vendor Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Vendor Data Migration Facade", 'OnMigrateVendor', '', true, true)]
-    procedure OnMigrateVendor(VAR Sender: Codeunit "Vendor Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Vendor Data Migration Facade", OnMigrateVendor, '', true, true)]
+    local procedure OnMigrateVendor(VAR Sender: Codeunit "Vendor Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5VendTable: Record "C5 VendTable";
     begin
@@ -38,8 +42,8 @@ codeunit 51864 "C5 VendTable Migrator"
     /// </summary>
     /// <param name="VAR Sender">Codeunit "Vendor Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Vendor Data Migration Facade", 'OnMigrateVendorDimensions', '', true, true)]
-    procedure OnMigrateVendorDimensions(VAR Sender: Codeunit "Vendor Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Vendor Data Migration Facade", OnMigrateVendorDimensions, '', true, true)]
+    local procedure OnMigrateVendorDimensions(VAR Sender: Codeunit "Vendor Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5VendTable: Record "C5 VendTable";
         C5HelperFunctions: Codeunit "C5 Helper Functions";
@@ -77,9 +81,9 @@ codeunit 51864 "C5 VendTable Migrator"
     local procedure MigrateVendorDetails(C5VendTable: Record "C5 VendTable"; VendorDataMigrationFacade: Codeunit "Vendor Data Migration Facade")
     var
         C5VendContact: Record "C5 VendContact";
+        Currency: Record Currency;
         C5HelperFunctions: Codeunit "C5 Helper Functions";
         PostCode: Code[20];
-        Currency: Record Currency;
         City: Text[30];
         CountryRegionCode: Code[10];
     begin
@@ -87,13 +91,13 @@ codeunit 51864 "C5 VendTable Migrator"
             exit;
 
 
-        if C5VendTable.Currency <> '' then begin
+        if C5VendTable.Currency <> '' then
             if not Currency.Get(C5VendTable.Currency) then begin
                 Currency.Code := C5VendTable.Currency;
                 Currency.Description := 'C5 - ' + C5VendTable.Currency;
                 Currency.Insert();
             end;
-        end;
+
         VendorDataMigrationFacade.SetSearchName(C5VendTable.SearchName);
         C5HelperFunctions.ExtractPostCodeAndCity(C5VendTable.ZipCity, C5vENDTable.Country, PostCode, City, CountryRegionCode);
         VendorDataMigrationFacade.SetAddress(C5VendTable.Address1, C5VendTable.Address2, CountryRegionCode, PostCode, City);
@@ -116,7 +120,7 @@ codeunit 51864 "C5 VendTable Migrator"
         // reference to another vendor
         // to make sure the pay to vendor exists
         if (C5VendTable.InvoiceAccount <> '') and not VendorDataMigrationFacade.DoesVendorExist(C5VendTable.InvoiceAccount) then
-            Error(StrSubstNo(ReferencedVendorDoesNotExistErr, C5VendTable.Account, C5VendTable.InvoiceAccount));
+            Error(ReferencedVendorDoesNotExistErr, C5VendTable.Account, C5VendTable.InvoiceAccount);
 
         VendorDataMigrationFacade.SetPayToVendorNo(C5VendTable.InvoiceAccount); // foreign key
 
@@ -142,8 +146,8 @@ codeunit 51864 "C5 VendTable Migrator"
     /// <param name="Sender">VAR Codeunit "Vendor Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
     /// <param name="ChartOfAccountsMigrated">Boolean.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Vendor Data Migration Facade", 'OnMigrateVendorPostingGroups', '', true, true)]
-    procedure OnMigrateVendorPostingGroups(var Sender: Codeunit "Vendor Data Migration Facade"; RecordIdToMigrate: RecordId; ChartOfAccountsMigrated: Boolean)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Vendor Data Migration Facade", OnMigrateVendorPostingGroups, '', true, true)]
+    local procedure OnMigrateVendorPostingGroups(var Sender: Codeunit "Vendor Data Migration Facade"; RecordIdToMigrate: RecordId; ChartOfAccountsMigrated: Boolean)
     var
         C5VendTable: Record "C5 VendTable";
         C5VendGroup: Record "C5 VendGroup";
@@ -173,8 +177,8 @@ codeunit 51864 "C5 VendTable Migrator"
     /// <param name="Sender">VAR Codeunit "Vendor Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
     /// <param name="ChartOfAccountsMigrated">Boolean.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Vendor Data Migration Facade", 'OnMigrateVendorTransactions', '', true, true)]
-    procedure OnMigrateVendorTransactions(var Sender: Codeunit "Vendor Data Migration Facade"; RecordIdToMigrate: RecordId; ChartOfAccountsMigrated: Boolean)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Vendor Data Migration Facade", OnMigrateVendorTransactions, '', true, true)]
+    local procedure OnMigrateVendorTransactions(var Sender: Codeunit "Vendor Data Migration Facade"; RecordIdToMigrate: RecordId; ChartOfAccountsMigrated: Boolean)
     var
         C5VendTable: Record "C5 VendTable";
         C5VendTrans: Record "C5 VendTrans";
@@ -263,12 +267,14 @@ codeunit 51864 "C5 VendTable Migrator"
         end;
 
         case C5Payment.UnitCode of
+#pragma warning disable AA0217
             C5Payment.UnitCode::Day:
                 DueDateCalculation += StrSubstNo('+%1D', C5Payment.Qty);
             C5Payment.UnitCode::Week:
                 DueDateCalculation += StrSubstNo('+%1W', C5Payment.Qty);
             C5Payment.UnitCode::Month:
                 DueDateCalculation += StrSubstNo('+%1M', C5Payment.Qty);
+#pragma warning restore AA0217
         end;
         DueDateCalculation := StrSubstNo('<%1>', DueDateCalculation);
         Evaluate(DueDateAsDateFormula, DueDateCalculation);

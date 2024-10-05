@@ -1,5 +1,4 @@
-
-
+namespace CurabisC5.CurabisCMigration;
 table 51862 "C5 InvenTable"
 {
     ReplicateData = false;

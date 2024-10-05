@@ -1,4 +1,11 @@
-
+namespace CurabisC5.CurabisCMigration;
+using System.Reflection;
+using System.Utilities;
+using Microsoft.Finance.GeneralLedger.Setup;
+using System.Globalization;
+using Microsoft.Utilities;
+using System.Integration;
+using Microsoft.Foundation.Company;
 
 /// <summary>
 /// Codeunit C5 Helper Functions (ID 51865).
@@ -889,7 +896,7 @@ codeunit 51865 "C5 Helper Functions"
         if not Language.get(AbbreviatedLanguage) then begin
             Language.Init();
             Language.Code := AbbreviatedLanguage;
-            Language.Name := GetLanguageName(AbbreviatedLanguage);
+            Language.Name := CopyStr(GetLanguageName(AbbreviatedLanguage), 1, MaxStrLen(Language.Name));
             Language."Windows Language ID" := GetWindowsLanguageID(AbbreviatedLanguage);
             Language.Insert();
         end;
@@ -922,29 +929,29 @@ codeunit 51865 "C5 Helper Functions"
 
     local procedure GetLanguageName(AbbreviatedLanguage: Code[10]): Text
     var
-        DanishLabel: Label 'Danish';
-        DutchLabel: Label 'Dutch';
-        EnglishLabel: label 'English';
-        FrenchLabel: Label 'French';
-        GermanLabel: Label 'German';
-        IslandicLabel: Label 'Islandic';
-        ItalianLabel: Label 'Italian';
+        DanishLbl: Label 'Danish';
+        DutchLbl: Label 'Dutch';
+        EnglishLbl: label 'English';
+        FrenchLbl: Label 'French';
+        GermanLbl: Label 'German';
+        IslandicLbl: Label 'Islandic';
+        ItalianLbl: Label 'Italian';
     begin
         case AbbreviatedLanguage of
             'DAN':
-                exit(DanishLabel);
+                exit(DanishLbl);
             'NLD':
-                exit(DutchLabel);
+                exit(DutchLbl);
             'ENU':
-                exit(EnglishLabel);
+                exit(EnglishLbl);
             'FRA':
-                exit(FrenchLabel);
+                exit(FrenchLbl);
             'DEU':
-                exit(GermanLabel);
+                exit(GermanLbl);
             'ISL':
-                exit(IslandicLabel);
+                exit(IslandicLbl);
             'ITA':
-                exit(ItalianLabel);
+                exit(ItalianLbl);
         end;
     end;
     /// <summary>

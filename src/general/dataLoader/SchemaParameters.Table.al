@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 /// <summary>
 /// Table C5 Schema Parameters (ID 51887).

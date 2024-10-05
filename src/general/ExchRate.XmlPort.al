@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 /// <summary>
 /// XmlPort C5 Exch. Rate (ID 51895).
@@ -18,8 +18,11 @@ xmlport 51895 "C5 Exch. Rate"
             XmlName = 'ExchRateDocument';
             tableelement(C5ExchRate; "C5 ExchRate")
             {
+                /* A */
                 fieldelement(Currency; C5ExchRate.Currency) { }
+                /* B */
                 fieldelement(ExchRate; C5ExchRate.ExchRate) { }
+                /* C */
                 textelement(FromDateText)
                 {
                     trigger OnAfterAssignVariable()
@@ -27,9 +30,12 @@ xmlport 51895 "C5 Exch. Rate"
                         C5HelperFunctions.TryConvertFromStringDate(FromDateText, CopyStr(DateFormatStringTxt, 1, 20), C5ExchRate.FromDate);
                     end;
                 }
-
+                /* D */
                 fieldelement(Comment; C5ExchRate.Comment) { }
+                /* E */
                 fieldelement(Triangulation; C5ExchRate.Triangulation) { }
+
+
 
                 trigger OnBeforeInsertRecord();
                 begin

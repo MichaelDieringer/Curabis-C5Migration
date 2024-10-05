@@ -1,4 +1,10 @@
-
+namespace CurabisC5.CurabisCMigration;
+using System.Integration;
+using Microsoft.Inventory.Item;
+using Microsoft.Sales.Customer;
+using Microsoft.Purchases.Vendor;
+using System.Threading;
+using Microsoft.Finance.GeneralLedger.Account;
 
 /// <summary>
 /// Codeunit C5 Migr. Dashboard Mgt (ID 51870).

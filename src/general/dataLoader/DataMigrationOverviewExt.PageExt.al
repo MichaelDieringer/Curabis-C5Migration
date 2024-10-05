@@ -1,3 +1,6 @@
+namespace CurabisC5.CurabisCMigration;
+using System.Integration;
+
 /// <summary>
 /// PageExtension Data Migration Overview Ext. (ID 1900) extends Record Data Migration Overview.
 /// </summary>

@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 xmlport 51873 "C5 InvenTable"
 {

@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 #pragma implicitwith disable
 /// <summary>
@@ -11,29 +11,75 @@ page 51867 "C5 InvenItemGroup"
     DeleteAllowed = false;
     InsertAllowed = false;
     Caption = 'C5 Item Groups';
-
+    ApplicationArea = All;
+    UsageCategory = None;
     layout
     {
         area(content)
         {
             group(General)
             {
-#pragma warning disable AA0218
-                field(Group; Rec.Group) { ApplicationArea = All; }
-                field(GroupName; Rec.GroupName) { ApplicationArea = All; }
-                field(SalesAcc; Rec.SalesAcc) { ApplicationArea = All; }
-                field(COGSAcc; Rec.COGSAcc) { ApplicationArea = All; }
-                field(SalesDiscAcc; Rec.SalesDiscAcc) { ApplicationArea = All; }
-                field(InventoryInflowAcc; Rec.InventoryInflowAcc) { ApplicationArea = All; }
-                field(InventoryOutflowAcc; Rec.InventoryOutflowAcc) { ApplicationArea = All; }
-                field(LossAcc; Rec.LossAcc) { ApplicationArea = All; }
-                field(ProfitAcc; Rec.ProfitAcc) { ApplicationArea = All; }
-                field(InterimInflowOffset; Rec.InterimInflowOffset) { ApplicationArea = All; }
-                field(InterimOutflowOffset; Rec.InterimOutflowOffset) { ApplicationArea = All; }
-                field(ProfitMarginPct; Rec.ProfitMarginPct) { ApplicationArea = All; }
-                field(InterimInflowAcc; Rec.InterimInflowAcc) { ApplicationArea = All; }
-                field(InterimOutflowAcc; Rec.InterimOutflowAcc) { ApplicationArea = All; }
-                field(PurchDiscAcc; Rec.PurchDiscAcc) { ApplicationArea = All; }
+
+                field(Group; Rec.Group)
+                {
+                    ToolTip = 'Specifies the value of the Group field.';
+                }
+                field(GroupName; Rec.GroupName)
+                {
+                    ToolTip = 'Specifies the value of the Group name field.';
+                }
+                field(SalesAcc; Rec.SalesAcc)
+                {
+                    ToolTip = 'Specifies the value of the Sales a/c field.';
+                }
+                field(COGSAcc; Rec.COGSAcc)
+                {
+                    ToolTip = 'Specifies the value of the COGS a/c field.';
+                }
+                field(SalesDiscAcc; Rec.SalesDiscAcc)
+                {
+                    ToolTip = 'Specifies the value of the LineDiscSales field.';
+                }
+                field(InventoryInflowAcc; Rec.InventoryInflowAcc)
+                {
+                    ToolTip = 'Specifies the value of the Inven. inflow field.';
+                }
+                field(InventoryOutflowAcc; Rec.InventoryOutflowAcc)
+                {
+                    ToolTip = 'Specifies the value of the Inven. outflow field.';
+                }
+                field(LossAcc; Rec.LossAcc)
+                {
+                    ToolTip = 'Specifies the value of the Loss field.';
+                }
+                field(ProfitAcc; Rec.ProfitAcc)
+                {
+                    ToolTip = 'Specifies the value of the Profit field.';
+                }
+                field(InterimInflowOffset; Rec.InterimInflowOffset)
+                {
+                    ToolTip = 'Specifies the value of the Int. off. inflow a/c field.';
+                }
+                field(InterimOutflowOffset; Rec.InterimOutflowOffset)
+                {
+                    ToolTip = 'Specifies the value of the Int. off. outflow a/c field.';
+                }
+                field(ProfitMarginPct; Rec.ProfitMarginPct)
+                {
+                    ToolTip = 'Specifies the value of the Profit margin field.';
+                }
+                field(InterimInflowAcc; Rec.InterimInflowAcc)
+                {
+                    ToolTip = 'Specifies the value of the Interim inflow field.';
+                }
+                field(InterimOutflowAcc; Rec.InterimOutflowAcc)
+                {
+                    ToolTip = 'Specifies the value of the Interim outflow field.';
+                }
+                field(PurchDiscAcc; Rec.PurchDiscAcc)
+                {
+                    ToolTip = 'Specifies the value of the LineDiscPurchase field.';
+                }
 #pragma warning restore
             }
         }

@@ -1,4 +1,6 @@
-
+namespace CurabisC5.CurabisCMigration;
+using Microsoft.Foundation.Period;
+using Microsoft.Finance.GeneralLedger.Setup;
 
 /// <summary>
 /// Page C5 Company Settings (ID 51904).
@@ -56,6 +58,7 @@ page 51904 "C5 Company Settings"
                 InFooterBar = true;
                 Image = NextRecord;
                 ApplicationArea = All;
+                ToolTip = 'Executes the OK action.';
                 trigger OnAction();
                 begin
                     SaveCurrentPeriod();

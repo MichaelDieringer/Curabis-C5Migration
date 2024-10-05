@@ -1,3 +1,7 @@
+namespace CurabisC5.CurabisCMigration;
+using Microsoft.Foundation.Company;
+using System.Environment;
+using System.Privacy;
 
 /// <summary>
 /// Codeunit C5 Install (ID 51898).
@@ -11,7 +15,7 @@ codeunit 51898 "C5 Install"
         CompanyInitialize();
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Company-Initialize", 'OnCompanyInitialize', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Company-Initialize", OnCompanyInitialize, '', false, false)]
     local procedure CompanyInitialize()
     begin
         ApplyEvaluationClassificationsForPrivacy();

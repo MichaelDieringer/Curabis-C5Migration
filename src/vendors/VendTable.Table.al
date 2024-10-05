@@ -1,4 +1,5 @@
-
+namespace CurabisC5.CurabisCMigration;
+using Microsoft.Purchases.Vendor;
 
 /// <summary>
 /// Table C5 VendTable (ID 51861).

@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 table 51867 "C5 InvenItemGroup"
 {
@@ -81,6 +81,10 @@ table 51867 "C5 InvenItemGroup"
         key(PK; RecId)
         {
             Clustered = true;
+        }
+        key(Key2; Group)
+        {
+
         }
     }
 }

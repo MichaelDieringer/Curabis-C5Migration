@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 table 51893 "C5 VendGroup"
 {
@@ -61,6 +61,10 @@ table 51893 "C5 VendGroup"
         key(PK; RecId)
         {
             Clustered = true;
+        }
+        key(Key2; Group)
+        {
+
         }
     }
 }

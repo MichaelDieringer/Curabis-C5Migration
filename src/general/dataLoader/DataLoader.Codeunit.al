@@ -1,4 +1,12 @@
-
+namespace CurabisC5.CurabisCMigration;
+using Microsoft.Utilities;
+using Microsoft.Purchases.Vendor;
+using System.Reflection;
+using Microsoft.Inventory.Item;
+using System.Utilities;
+using Microsoft.Sales.Customer;
+using Microsoft.Finance.GeneralLedger.Account;
+using System.Integration;
 
 /// <summary>
 /// Codeunit C5 Data Loader (ID 51868).
@@ -6,15 +14,15 @@
 codeunit 51868 "C5 Data Loader"
 {
     var
-        NameValueBuffer: Record "Name/Value Buffer" temporary;
+        TempNameValueBuffer: Record "Name/Value Buffer" temporary;
         HelperFunctions: Codeunit "C5 Helper Functions";
 
 
     /// <summary>
     /// FillStagingTables.
     /// </summary>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnFillStagingTables', '', false, false)]
-    procedure FillStagingTables()
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnFillStagingTables, '', false, false)]
+    local procedure FillStagingTables()
     var
         DataMigrationStatus: Record "Data Migration Status";
         C5SchemaParameters: Record "C5 Schema Parameters";
@@ -30,7 +38,7 @@ codeunit 51868 "C5 Data Loader"
         OnFillStagingTablesStarted();
         C5SchemaParameters.GetSingleInstance();
 
-        if not Codeunit.Run(Codeunit::"C5 Unzip", NameValueBuffer) then
+        if not Codeunit.Run(Codeunit::"C5 Unzip", TempNameValueBuffer) then
             StopPendingMigrationsAndSurfaceErrors();
 
         DataMigrationStatus.SetRange("Migration Type", C5MigrDashboardMgt.GetC5MigrationTypeTxt());
@@ -114,7 +122,7 @@ codeunit 51868 "C5 Data Loader"
         OnFillStagingTablesFinished(DurationAsInt);
     end;
 
-    [EventSubscriber(ObjectType::XmlPort, XMLPORT::"C5 LedTrans", 'OnThousandAccountTransactionsRead', '', true, true)]
+    [EventSubscriber(ObjectType::XmlPort, XMLPORT::"C5 LedTrans", OnThousandAccountTransactionsRead, '', true, true)]
     local procedure OnThousandRecordsRead()
     var
         C5DataLoaderStatus: Record "C5 Data Loader Status";
@@ -122,7 +130,7 @@ codeunit 51868 "C5 Data Loader"
         C5DataLoaderStatus.IncrementProccessedRecords(1000);
     end;
 
-    [EventSubscriber(ObjectType::XmlPort, XMLPORT::"C5 CustTrans", 'OnThousandCustomerTransactionsRead', '', true, true)]
+    [EventSubscriber(ObjectType::XmlPort, XMLPORT::"C5 CustTrans", OnThousandCustomerTransactionsRead, '', true, true)]
     local procedure OnThousandCustomerTransactionsRead()
     var
         C5DataLoaderStatus: Record "C5 Data Loader Status";
@@ -130,7 +138,7 @@ codeunit 51868 "C5 Data Loader"
         C5DataLoaderStatus.IncrementProccessedRecords(1000);
     end;
 
-    [EventSubscriber(ObjectType::XmlPort, XMLPORT::"C5 VendTrans", 'OnThousandVendorTransactionsRead', '', true, true)]
+    [EventSubscriber(ObjectType::XmlPort, XMLPORT::"C5 VendTrans", OnThousandVendorTransactionsRead, '', true, true)]
     local procedure OnThousandVendorTransactionsRead()
     var
         C5DataLoaderStatus: Record "C5 Data Loader Status";
@@ -138,7 +146,7 @@ codeunit 51868 "C5 Data Loader"
         C5DataLoaderStatus.IncrementProccessedRecords(1000);
     end;
 
-    [EventSubscriber(ObjectType::XmlPort, XMLPORT::"C5 InvenTrans", 'OnThousandItemTransactionsRead', '', true, true)]
+    [EventSubscriber(ObjectType::XmlPort, XMLPORT::"C5 InvenTrans", OnThousandItemTransactionsRead, '', true, true)]
     local procedure OnThousandItemTransactionsRead()
     var
         C5DataLoaderStatus: Record "C5 Data Loader Status";
@@ -717,7 +725,7 @@ codeunit 51868 "C5 Data Loader"
         FileContentStream: InStream;
     begin
         GetFileNameForRecord(RecordVariant, Filename);
-        if not HelperFunction.GetFileContentAsStream(Filename, NameValueBuffer, FileContentStream) then
+        if not HelperFunction.GetFileContentAsStream(Filename, TempNameValueBuffer, FileContentStream) then
             exit(false);
 
         HelperFunctions.ProcessStreamForSubstitutions(TempBlob, FileContentStream, ProcessedStream);

@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 #pragma implicitwith disable
 /// <summary>
@@ -11,15 +11,25 @@ page 51885 "C5 InvenDiscGroup"
     DeleteAllowed = false;
     InsertAllowed = false;
     Caption = 'C5 Inventory Discount';
+    ApplicationArea = All;
+    UsageCategory = None;
     layout
     {
         area(content)
         {
             group(General)
             {
-#pragma warning disable AA0218
-                field(DiscGroup; Rec.DiscGroup) { ApplicationArea = All; }
-                field(Comment; Rec.Comment) { ApplicationArea = All; }
+
+                field(DiscGroup; Rec.DiscGroup)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Discount group field.';
+                }
+                field(Comment; Rec.Comment)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Comment field.';
+                }
 #pragma warning restore
             }
         }

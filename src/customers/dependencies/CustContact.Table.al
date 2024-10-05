@@ -1,4 +1,5 @@
-
+namespace CurabisC5.CurabisCMigration;
+using Microsoft.Sales.Customer;
 
 table 51899 "C5 CustContact"
 {

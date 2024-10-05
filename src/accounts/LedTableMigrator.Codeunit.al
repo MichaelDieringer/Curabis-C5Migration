@@ -1,4 +1,5 @@
-
+namespace CurabisC5.CurabisCMigration;
+using System.Integration;
 
 /// <summary>
 /// Codeunit C5 LedTable Migrator (ID 51862).
@@ -53,8 +54,8 @@ codeunit 51862 "C5 LedTable Migrator"
     /// </summary>
     /// <param name="VAR Sender">Codeunit "GL Acc. Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"GL Acc. Data Migration Facade", 'OnMigrateGlAccount', '', true, true)]
-    procedure OnMigrateGlAccount(VAR Sender: Codeunit "GL Acc. Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"GL Acc. Data Migration Facade", OnMigrateGlAccount, '', true, true)]
+    local procedure OnMigrateGlAccount(VAR Sender: Codeunit "GL Acc. Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5LedTable: Record "C5 LedTable";
     begin
@@ -69,8 +70,8 @@ codeunit 51862 "C5 LedTable Migrator"
     /// </summary>
     /// <param name="VAR Sender">Codeunit "GL Acc. Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"GL Acc. Data Migration Facade", 'OnMigrateGlAccountDimensions', '', true, true)]
-    procedure OnMigrateGlAccountDimensions(VAR Sender: Codeunit "GL Acc. Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"GL Acc. Data Migration Facade", OnMigrateGlAccountDimensions, '', true, true)]
+    local procedure OnMigrateGlAccountDimensions(VAR Sender: Codeunit "GL Acc. Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5LedTable: Record "C5 LedTable";
         C5HelperFunctions: Codeunit "C5 Helper Functions";

@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 #pragma implicitwith disable
 /// <summary>
@@ -11,6 +11,8 @@ page 51869 "C5 Payment"
     DeleteAllowed = false;
     InsertAllowed = false;
     Caption = 'C5 Payment';
+    ApplicationArea = All;
+    UsageCategory = None;
 
     layout
     {
@@ -18,12 +20,32 @@ page 51869 "C5 Payment"
         {
             group(General)
             {
-#pragma warning disable AA0218
-                field(Payment; Rec.Payment) { ApplicationArea = All; }
-                field(Txt; Rec.Txt) { ApplicationArea = All; }
-                field(Method; Rec.Method) { ApplicationArea = All; }
-                field(Qty; Rec.Qty) { ApplicationArea = All; }
-                field(UnitCode; Rec.UnitCode) { ApplicationArea = All; }
+
+                field(Payment; Rec.Payment)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Payment field.';
+                }
+                field(Txt; Rec.Txt)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Text field.';
+                }
+                field(Method; Rec.Method)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Method field.';
+                }
+                field(Qty; Rec.Qty)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Qty field.';
+                }
+                field(UnitCode; Rec.UnitCode)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Unit field.';
+                }
 #pragma warning restore
             }
         }

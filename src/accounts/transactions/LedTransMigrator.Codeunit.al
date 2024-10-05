@@ -1,4 +1,7 @@
-
+namespace CurabisC5.CurabisCMigration;
+using Microsoft.Finance.GeneralLedger.Journal;
+using Microsoft.Finance.GeneralLedger.Account;
+using System.Integration;
 
 /// <summary>
 /// Codeunit C5 LedTrans Migrator (ID 1871).
@@ -42,9 +45,13 @@ codeunit 51871 "C5 LedTrans Migrator"
             CreateGeneralJournalBatchIfNeeded(GenJournalBatch);
             repeat
                 DataMigrationStatusFacade.IncrementMigratedRecordCount(C5MigrDashboardMgt.GetC5MigrationTypeTxt(), Database::"C5 LedTrans", 1);
+#pragma warning disable AA0205
                 if CurrentAccount <> C5LedTrans.Account then begin
+#pragma warning restore AA0205
                     if CurrentAccount <> '' then begin
+#pragma warning disable AA0205
                         InsertNewGenJournalLine(GenJournalLine, GenJournalBatch, TotalAmount, PostingDate, PostingDate, CurrentAccount, 'C5MIGRATE', '');
+#pragma warning restore AA0205
                         // Update the DashBoard after each Account balance has been Migrated
                         Commit();
                     end;

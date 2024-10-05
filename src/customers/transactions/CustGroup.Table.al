@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 table 51891 "C5 CustGroup"
 {
@@ -62,6 +62,11 @@ table 51891 "C5 CustGroup"
         {
             Clustered = true;
         }
+        key(key2; Group)
+        {
+
+        }
+
     }
 }
 

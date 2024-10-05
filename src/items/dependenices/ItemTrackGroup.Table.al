@@ -1,4 +1,4 @@
-
+namespace CurabisC5.CurabisCMigration;
 
 table 51871 "C5 ItemTrackGroup"
 {

@@ -1,4 +1,10 @@
-
+namespace CurabisC5.CurabisCMigration;
+using System.Integration;
+using Microsoft.Sales.Customer;
+using Microsoft.Purchases.Vendor;
+using Microsoft.Finance.GeneralLedger.Setup;
+using Microsoft.Finance.GeneralLedger.Account;
+using Microsoft.Inventory.Item;
 
 /// <summary>
 /// Codeunit C5 Data Migration Mgt. (ID 51860).

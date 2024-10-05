@@ -1,4 +1,5 @@
-
+namespace CurabisC5.CurabisCMigration;
+using Microsoft.Purchases.Vendor;
 
 table 51901 "C5 VendContact"
 {

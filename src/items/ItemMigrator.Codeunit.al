@@ -1,4 +1,8 @@
-
+namespace CurabisC5.CurabisCMigration;
+using System.Integration;
+using Microsoft.Inventory.BOM;
+using Microsoft.Pricing.Source;
+using Microsoft.Pricing.Asset;
 
 /// <summary>
 /// Codeunit C5 Item Migrator (ID 51867).
@@ -26,8 +30,8 @@ codeunit 51867 "C5 Item Migrator"
     /// </summary>
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateItem', '', true, true)]
-    procedure OnMigrateItem(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateItem, '', true, true)]
+    local procedure OnMigrateItem(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5InvenTable: Record "C5 InvenTable";
     begin
@@ -42,8 +46,8 @@ codeunit 51867 "C5 Item Migrator"
     /// </summary>
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateCostingMethod', '', true, true)]
-    procedure OnMigrateCostingMethod(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateCostingMethod, '', true, true)]
+    local procedure OnMigrateCostingMethod(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5InvenTable: Record "C5 InvenTable";
     begin
@@ -93,11 +97,11 @@ codeunit 51867 "C5 Item Migrator"
             if C5InvenBom.FindSet() then
                 repeat
                     if not ItemDataMigrationFacade.DoesItemExist(C5InvenBom.ItemNumber) then
-                        Error(StrSubstNo(ReferencedItemDoesNotExistErr, C5InvenTable.ItemNumber, C5InvenBom.ItemNumber));
+                        Error(ReferencedItemDoesNotExistErr, C5InvenTable.ItemNumber, C5InvenBom.ItemNumber);
                     C5InvenTableComponent.SetRange(ItemNumber, C5InvenBom.ItemNumber);
                     if C5InvenTableComponent.FindFirst() then begin
                         if C5InvenTableComponent.ItemType = C5InvenTableComponent.ItemType::Service then
-                            Error(StrSubstNo(ServiceItemInBOMErr, ProductName.Short(), C5InvenBom.ItemNumber, C5InvenBom.BOMItemNumber));
+                            Error(ServiceItemInBOMErr, ProductName.Short(), C5InvenBom.ItemNumber, C5InvenBom.BOMItemNumber);
                         ItemDataMigrationFacade.CreateBOMComponent(
                             C5InvenBom.ItemNumber, C5InvenBom.Qty, C5InvenBom.Position, BOMComponent.Type::Item.AsInteger());
                     end;
@@ -107,7 +111,7 @@ codeunit 51867 "C5 Item Migrator"
         // reference to another item
         // to make sure the alt item exists
         if (C5InvenTable.AltItemNumber <> '') and not ItemDataMigrationFacade.DoesItemExist(C5InvenTable.AltItemNumber) then
-            Error(StrSubstNo(ReferencedItemDoesNotExistErr, C5InvenTable.ItemNumber, C5InvenTable.AltItemNumber));
+            Error(ReferencedItemDoesNotExistErr, C5InvenTable.ItemNumber, C5InvenTable.AltItemNumber);
 
         ItemDataMigrationFacade.SetAlternativeItemNo(C5InvenTable.AltItemNumber);
 
@@ -122,8 +126,8 @@ codeunit 51867 "C5 Item Migrator"
     /// </summary>
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateItemTrackingCode', '', true, true)]
-    procedure OnMigrateItemTrackingCode(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateItemTrackingCode, '', true, true)]
+    local procedure OnMigrateItemTrackingCode(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5InvenTable: Record "C5 InvenTable";
     begin
@@ -142,8 +146,8 @@ codeunit 51867 "C5 Item Migrator"
     /// </summary>
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateItemUnitOfMeasure', '', true, true)]
-    procedure OnMigrateItemUnitOfMeasure(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateItemUnitOfMeasure, '', true, true)]
+    local procedure OnMigrateItemUnitOfMeasure(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5InvenTable: Record "C5 InvenTable";
         C5SchemaParameters: Record "C5 Schema Parameters";
@@ -169,8 +173,8 @@ codeunit 51867 "C5 Item Migrator"
     /// </summary>
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateItemDiscountGroup', '', true, true)]
-    procedure OnMigrateItemDiscountGroup(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateItemDiscountGroup, '', true, true)]
+    local procedure OnMigrateItemDiscountGroup(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5InvenTable: Record "C5 InvenTable";
     begin
@@ -191,8 +195,8 @@ codeunit 51867 "C5 Item Migrator"
     /// </summary>
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateItemSalesLineDiscount', '', true, true)]
-    procedure OnMigrateItemSalesLineDiscount(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateItemSalesLineDiscount, '', true, true)]
+    local procedure OnMigrateItemSalesLineDiscount(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5InvenTable: Record "C5 InvenTable";
     begin
@@ -207,8 +211,8 @@ codeunit 51867 "C5 Item Migrator"
     /// </summary>
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateItemPrice', '', true, true)]
-    procedure OnMigrateItemPrices(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateItemPrice, '', true, true)]
+    local procedure OnMigrateItemPrices(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5InvenTable: Record "C5 InvenTable";
     begin
@@ -224,8 +228,8 @@ codeunit 51867 "C5 Item Migrator"
     /// </summary>
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateItemTariffNo', '', true, true)]
-    procedure OnMigrateItemTariffNo(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateItemTariffNo, '', true, true)]
+    local procedure OnMigrateItemTariffNo(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5InvenTable: Record "C5 InvenTable";
     begin
@@ -246,8 +250,8 @@ codeunit 51867 "C5 Item Migrator"
     /// </summary>
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateItemDimensions', '', true, true)]
-    procedure OnMigrateItemDimensions(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateItemDimensions, '', true, true)]
+    local procedure OnMigrateItemDimensions(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId)
     var
         C5InvenTable: Record "C5 InvenTable";
         C5HelperFunctions: Codeunit "C5 Helper Functions";
@@ -282,8 +286,8 @@ codeunit 51867 "C5 Item Migrator"
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
     /// <param name="ChartOfAccountsMigrated">Boolean.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateItemPostingGroups', '', true, true)]
-    procedure OnMigrateItemPostingGroups(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId; ChartOfAccountsMigrated: Boolean)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateItemPostingGroups, '', true, true)]
+    local procedure OnMigrateItemPostingGroups(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId; ChartOfAccountsMigrated: Boolean)
     var
         C5InvenTable: Record "C5 InvenTable";
         C5InvenItemGroup: Record "C5 InvenItemGroup";
@@ -335,8 +339,8 @@ codeunit 51867 "C5 Item Migrator"
     /// <param name="Sender">VAR Codeunit "Item Data Migration Facade".</param>
     /// <param name="RecordIdToMigrate">RecordId.</param>
     /// <param name="ChartOfAccountsMigrated">Boolean.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", 'OnMigrateInventoryTransactions', '', true, true)]
-    procedure OnMigrateInventoryTransactions(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId; ChartOfAccountsMigrated: Boolean)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Data Migration Facade", OnMigrateInventoryTransactions, '', true, true)]
+    local procedure OnMigrateInventoryTransactions(var Sender: Codeunit "Item Data Migration Facade"; RecordIdToMigrate: RecordId; ChartOfAccountsMigrated: Boolean)
     var
         C5InvenTable: Record "C5 InvenTable";
         C5InvenTrans: Record "C5 InvenTrans";
@@ -452,6 +456,8 @@ codeunit 51867 "C5 Item Migrator"
     var
         SalesTypeToSet: Option Customer,"Customer Disc. Group","All Customers",Campaign;
         TypeToSet: Option Item,"Item Disc. Group";
+        Priceassettype: Enum "Price Asset Type";
+        PriceSourceType: enum "Price Source Type";
     begin
         if C5InvenCustDisc.Type <> C5InvenCustDisc.Type::Percent then
             exit;
@@ -481,12 +487,16 @@ codeunit 51867 "C5 Item Migrator"
             else
                 exit;
         end;
+        // SourceType: Enum "Price Source Type"; SourceNo: Code[20]; AssetType: Enum "Price Asset Type"; AssetNo: Code[20]; MinimumQuantity: Decimal; LineDiscountPercent: Decimal
 
+        Priceassettype := Priceassettype::Item;
+        PriceSourceType := PriceSourceType::"Customer";
         UninitializedItemDataMigrationFacade.CreateSalesLineDiscountIfNeeded(
-            SalesTypeToSet,
+            PriceSourceType,
             C5InvenCustDisc.AccountRelation,
-            TypeToSet,
+            Priceassettype,
             C5InvenCustDisc.ItemRelation,
+            1,
             C5InvenCustDisc.Rate_);
     end;
 #else
@@ -560,20 +570,21 @@ codeunit 51867 "C5 Item Migrator"
 #if not CLEAN19
     local procedure CreateNavSalesPriceIfNeeded(C5InvenPrice: Record "C5 InvenPrice")
     var
-        SalesType: Option Customer,"Customer Price Group","All Customers",Campaign;
+        PriceSourceType: enum "Price Source Type";
     begin
         CreateCustomerPriceGroupIfNeeded(C5InvenPrice.PriceGroup);
-
+        // SourceType: Enum "Price Source Type"; SourceNo: Code[20]; CurrencyCode: Code[10]; StartingDate: Date; AssetNo: Code[20]; VariantCode: Code[10]; UnitOfMeasure: Code[10]; MinimumQuantity: Decimal; UnitPrice: Decimal)
+        PriceSourceType := PriceSourceType::"Customer Price Group";
         UninitializedItemDataMigrationFacade.CreateSalesPriceIfNeeded(
-            SalesType::"Customer Price Group",
-            C5InvenPrice.PriceGroup,
-            C5InvenPrice.ItemNumber,
-            C5InvenPrice.Price,
+            PriceSourceType,
+            '',
             C5InvenPrice.Currency,
             0D,
+            C5InvenPrice.ItemNumber,
+            '',
             '',
             0,
-            '');
+            C5InvenPrice.Price);
     end;
 #else
     local procedure CreateNavSalesPriceIfNeeded(C5InvenPrice: Record "C5 InvenPrice")

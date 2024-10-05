@@ -1,4 +1,5 @@
-
+namespace CurabisC5.CurabisCMigration;
+using System.Integration;
 
 #pragma implicitwith disable
 /// <summary>
@@ -13,6 +14,8 @@ page 51899 "C5 CustTable List"
     InsertAllowed = false;
     ModifyAllowed = true;
     Caption = 'Customers';
+    ApplicationArea = all;
+    UsageCategory = Lists;
 
     layout
     {
@@ -20,82 +23,289 @@ page 51899 "C5 CustTable List"
         {
             repeater(General)
             {
-#pragma warning disable AA0218
+
                 field("Error Message"; MigrationErrorText)
                 {
-                    ApplicationArea = All;
-
+                    Caption = 'Error Message';
                     Enabled = false;
+                    ToolTip = 'Specifies the value of the MigrationErrorText field.';
                 }
-                field(Account; Rec.Account) { ApplicationArea = All; }
-                field(Name; Rec.Name) { ApplicationArea = All; }
-                field(Address1; Rec.Address1) { ApplicationArea = All; }
-                field(Address2; Rec.Address2) { ApplicationArea = All; }
-                field(ZipCity; Rec.ZipCity) { ApplicationArea = All; }
-                field(Country; Rec.Country) { ApplicationArea = All; }
-                field(Attention; Rec.Attention) { ApplicationArea = All; }
-                field(Phone; Rec.Phone) { ApplicationArea = All; }
-                field(Fax; Rec.Fax) { ApplicationArea = All; }
-                field(InvoiceAccount; Rec.InvoiceAccount) { ApplicationArea = All; }
-                field(Group; Rec.Group) { ApplicationArea = All; }
-                field(FixedDiscPct; Rec.FixedDiscPct) { ApplicationArea = All; }
-                field(Approved; Rec.Approved) { ApplicationArea = All; }
-                field(PriceGroup; Rec.PriceGroup) { ApplicationArea = All; }
-                field(DiscGroup; Rec.DiscGroup) { ApplicationArea = All; }
-                field(CashDisc; Rec.CashDisc) { ApplicationArea = All; }
-                field(ImageFile; Rec.ImageFile) { ApplicationArea = All; }
-                field(Currency; Rec.Currency) { ApplicationArea = All; }
-                field(Language_; Rec.Language_) { ApplicationArea = All; }
-                field(Payment; Rec.Payment) { ApplicationArea = All; }
-                field(Delivery; Rec.Delivery) { ApplicationArea = All; }
-                field(Blocked; Rec.Blocked) { ApplicationArea = All; }
-                field(SalesRep; Rec.SalesRep) { ApplicationArea = All; }
-                field(Vat; Rec.Vat) { ApplicationArea = All; }
-                field(DEL_StatType; Rec.DEL_StatType) { ApplicationArea = All; }
-                field(GiroNumber; Rec.GiroNumber) { ApplicationArea = All; }
-                field(VatNumber; Rec.VatNumber) { ApplicationArea = All; }
-                field(Interest; Rec.Interest) { ApplicationArea = All; }
-                field(Department; Rec.Department) { ApplicationArea = All; }
-                field(ReminderCode; Rec.ReminderCode) { ApplicationArea = All; }
-                field(OnetimeCustomer; Rec.OnetimeCustomer) { ApplicationArea = All; }
-                field(Inventory; Rec.Inventory) { ApplicationArea = All; }
-                field(EDIAddress; Rec.EDIAddress) { ApplicationArea = All; }
-                field(Balance; Rec.Balance) { ApplicationArea = All; }
-                field(Balance30; Rec.Balance30) { ApplicationArea = All; }
-                field(Balance60; Rec.Balance60) { ApplicationArea = All; }
-                field(Balance90; Rec.Balance90) { ApplicationArea = All; }
-                field(Balance120; Rec.Balance120) { ApplicationArea = All; }
-                field(Balance120Plus; Rec.Balance120Plus) { ApplicationArea = All; }
-                field(AmountDue; Rec.AmountDue) { ApplicationArea = All; }
-                field(CalculationDate; Rec.CalculationDate) { ApplicationArea = All; }
-                field(BalanceMax; Rec.BalanceMax) { ApplicationArea = All; }
-                field(BalanceMST; Rec.BalanceMST) { ApplicationArea = All; }
-                field(SearchName; Rec.SearchName) { ApplicationArea = All; }
-                field(DEL_Transport; Rec.DEL_Transport) { ApplicationArea = All; }
-                field(CashPayment; Rec.CashPayment) { ApplicationArea = All; }
-                field(PaymentMode; Rec.PaymentMode) { ApplicationArea = All; }
-                field(SalesGroup; Rec.SalesGroup) { ApplicationArea = All; }
-                field(ProjGroup; Rec.ProjGroup) { ApplicationArea = All; }
-                field(TradeCode; Rec.TradeCode) { ApplicationArea = All; }
-                field(TransportCode; Rec.TransportCode) { ApplicationArea = All; }
-                field(Email; Rec.Email) { ApplicationArea = All; }
-                field(URL; Rec.URL) { ApplicationArea = All; }
-                field(CellPhone; Rec.CellPhone) { ApplicationArea = All; }
-                field(KrakNumber; Rec.KrakNumber) { ApplicationArea = All; }
-                field(Centre; Rec.Centre) { ApplicationArea = All; }
-                field(Purpose; Rec.Purpose) { ApplicationArea = All; }
-                field(EanNumber; Rec.EanNumber) { ApplicationArea = All; }
-                field(DimAccountCode; Rec.DimAccountCode) { ApplicationArea = All; }
-                field(XMLInvoice; Rec.XMLInvoice) { ApplicationArea = All; }
-                field(LastInvoiceDate; Rec.LastInvoiceDate) { ApplicationArea = All; }
-                field(LastPaymentDate; Rec.LastPaymentDate) { ApplicationArea = All; }
-                field(LastReminderDate; Rec.LastReminderDate) { ApplicationArea = All; }
-                field(LastInterestDate; Rec.LastInterestDate) { ApplicationArea = All; }
-                field(LastInvoiceNumber; Rec.LastInvoiceNumber) { ApplicationArea = All; }
-                field(XMLImport; Rec.XMLImport) { ApplicationArea = All; }
-                field(VatGroup; Rec.VatGroup) { ApplicationArea = All; }
-                field(StdAccount; Rec.StdAccount) { ApplicationArea = All; }
-                field(VatNumberType; Rec.VatNumberType) { ApplicationArea = All; }
+                field(Account; Rec.Account)
+                {
+                    ToolTip = 'Specifies the value of the Account field.';
+                }
+                field(Name; Rec.Name)
+                {
+                    ToolTip = 'Specifies the value of the Name field.';
+                }
+                field(Address1; Rec.Address1)
+                {
+                    ToolTip = 'Specifies the value of the Address 1 field.';
+                }
+                field(Address2; Rec.Address2)
+                {
+                    ToolTip = 'Specifies the value of the Address 2 field.';
+                }
+                field(ZipCity; Rec.ZipCity)
+                {
+                    ToolTip = 'Specifies the value of the Zip code/City field.';
+                }
+                field(Country; Rec.Country)
+                {
+                    ToolTip = 'Specifies the value of the Country/region field.';
+                }
+                field(Attention; Rec.Attention)
+                {
+                    ToolTip = 'Specifies the value of the Attention field.';
+                }
+                field(Phone; Rec.Phone)
+                {
+                    ToolTip = 'Specifies the value of the Phone field.';
+                }
+                field(Fax; Rec.Fax)
+                {
+                    ToolTip = 'Specifies the value of the Fax field.';
+                }
+                field(InvoiceAccount; Rec.InvoiceAccount)
+                {
+                    ToolTip = 'Specifies the value of the Invoice a/c field.';
+                }
+                field(Group; Rec.Group)
+                {
+                    ToolTip = 'Specifies the value of the Group field.';
+                }
+                field(FixedDiscPct; Rec.FixedDiscPct)
+                {
+                    ToolTip = 'Specifies the value of the Fixed discount pct. field.';
+                }
+                field(Approved; Rec.Approved)
+                {
+                    ToolTip = 'Specifies the value of the Approved field.';
+                }
+                field(PriceGroup; Rec.PriceGroup)
+                {
+                    ToolTip = 'Specifies the value of the Price group field.';
+                }
+                field(DiscGroup; Rec.DiscGroup)
+                {
+                    ToolTip = 'Specifies the value of the Discount group field.';
+                }
+                field(CashDisc; Rec.CashDisc)
+                {
+                    ToolTip = 'Specifies the value of the Cash discount field.';
+                }
+                field(ImageFile; Rec.ImageFile)
+                {
+                    ToolTip = 'Specifies the value of the Image field.';
+                }
+                field(Currency; Rec.Currency)
+                {
+                    ToolTip = 'Specifies the value of the Currency field.';
+                }
+                field(Language_; Rec.Language_)
+                {
+                    ToolTip = 'Specifies the value of the Language field.';
+                }
+                field(Payment; Rec.Payment)
+                {
+                    ToolTip = 'Specifies the value of the Payment field.';
+                }
+                field(Delivery; Rec.Delivery)
+                {
+                    ToolTip = 'Specifies the value of the Delivery field.';
+                }
+                field(Blocked; Rec.Blocked)
+                {
+                    ToolTip = 'Specifies the value of the Locked field.';
+                }
+                field(SalesRep; Rec.SalesRep)
+                {
+                    ToolTip = 'Specifies the value of the Sales rep. field.';
+                }
+                field(Vat; Rec.Vat)
+                {
+                    ToolTip = 'Specifies the value of the VAT field.';
+                }
+                field(DEL_StatType; Rec.DEL_StatType)
+                {
+                    ToolTip = 'Specifies the value of the DELETEStatistics field.';
+                }
+                field(GiroNumber; Rec.GiroNumber)
+                {
+                    ToolTip = 'Specifies the value of the FIK/Giro field.';
+                }
+                field(VatNumber; Rec.VatNumber)
+                {
+                    ToolTip = 'Specifies the value of the VAT No. field.';
+                }
+                field(Interest; Rec.Interest)
+                {
+                    ToolTip = 'Specifies the value of the Interest field.';
+                }
+                field(Department; Rec.Department)
+                {
+                    ToolTip = 'Specifies the value of the Department field.';
+                }
+                field(ReminderCode; Rec.ReminderCode)
+                {
+                    ToolTip = 'Specifies the value of the Max. reminder field.';
+                }
+                field(OnetimeCustomer; Rec.OnetimeCustomer)
+                {
+                    ToolTip = 'Specifies the value of the One-off customer field.';
+                }
+                field(Inventory; Rec.Inventory)
+                {
+                    ToolTip = 'Specifies the value of the Inventory field.';
+                }
+                field(EDIAddress; Rec.EDIAddress)
+                {
+                    ToolTip = 'Specifies the value of the EDI address field.';
+                }
+                field(Balance; Rec.Balance)
+                {
+                    ToolTip = 'Specifies the value of the Balance field.';
+                }
+                field(Balance30; Rec.Balance30)
+                {
+                    ToolTip = 'Specifies the value of the 0-30 days field.';
+                }
+                field(Balance60; Rec.Balance60)
+                {
+                    ToolTip = 'Specifies the value of the 31-60 days field.';
+                }
+                field(Balance90; Rec.Balance90)
+                {
+                    ToolTip = 'Specifies the value of the 61-90 days field.';
+                }
+                field(Balance120; Rec.Balance120)
+                {
+                    ToolTip = 'Specifies the value of the 91-120 days field.';
+                }
+                field(Balance120Plus; Rec.Balance120Plus)
+                {
+                    ToolTip = 'Specifies the value of the More than 120 days field.';
+                }
+                field(AmountDue; Rec.AmountDue)
+                {
+                    ToolTip = 'Specifies the value of the Due field.';
+                }
+                field(CalculationDate; Rec.CalculationDate)
+                {
+                    ToolTip = 'Specifies the value of the Calculated field.';
+                }
+                field(BalanceMax; Rec.BalanceMax)
+                {
+                    ToolTip = 'Specifies the value of the Max. balance field.';
+                }
+                field(BalanceMST; Rec.BalanceMST)
+                {
+                    ToolTip = 'Specifies the value of the Balance LCY field.';
+                }
+                field(SearchName; Rec.SearchName)
+                {
+                    ToolTip = 'Specifies the value of the Search name field.';
+                }
+                field(DEL_Transport; Rec.DEL_Transport)
+                {
+                    ToolTip = 'Specifies the value of the DELETETransport field.';
+                }
+                field(CashPayment; Rec.CashPayment)
+                {
+                    ToolTip = 'Specifies the value of the Cash payment field.';
+                }
+                field(PaymentMode; Rec.PaymentMode)
+                {
+                    ToolTip = 'Specifies the value of the Paym. method field.';
+                }
+                field(SalesGroup; Rec.SalesGroup)
+                {
+                    ToolTip = 'Specifies the value of the Order group field.';
+                }
+                field(ProjGroup; Rec.ProjGroup)
+                {
+                    ToolTip = 'Specifies the value of the Project group field.';
+                }
+                field(TradeCode; Rec.TradeCode)
+                {
+                    ToolTip = 'Specifies the value of the Transact. type field.';
+                }
+                field(TransportCode; Rec.TransportCode)
+                {
+                    ToolTip = 'Specifies the value of the Transport field.';
+                }
+                field(Email; Rec.Email)
+                {
+                    ToolTip = 'Specifies the value of the Email field.';
+                }
+                field(URL; Rec.URL)
+                {
+                    ToolTip = 'Specifies the value of the Homepage field.';
+                }
+                field(CellPhone; Rec.CellPhone)
+                {
+                    ToolTip = 'Specifies the value of the Cell phone field.';
+                }
+                field(KrakNumber; Rec.KrakNumber)
+                {
+                    ToolTip = 'Specifies the value of the Krak no. field.';
+                }
+                field(Centre; Rec.Centre)
+                {
+                    ToolTip = 'Specifies the value of the Cost centre field.';
+                }
+                field(Purpose; Rec.Purpose)
+                {
+                    ToolTip = 'Specifies the value of the Purpose field.';
+                }
+                field(EanNumber; Rec.EanNumber)
+                {
+                    ToolTip = 'Specifies the value of the EAN field.';
+                }
+                field(DimAccountCode; Rec.DimAccountCode)
+                {
+                    ToolTip = 'Specifies the value of the A/c dimension field.';
+                }
+                field(XMLInvoice; Rec.XMLInvoice)
+                {
+                    ToolTip = 'Specifies the value of the OIOXML field.';
+                }
+                field(LastInvoiceDate; Rec.LastInvoiceDate)
+                {
+                    ToolTip = 'Specifies the value of the Invoice date field.';
+                }
+                field(LastPaymentDate; Rec.LastPaymentDate)
+                {
+                    ToolTip = 'Specifies the value of the Payment field.';
+                }
+                field(LastReminderDate; Rec.LastReminderDate)
+                {
+                    ToolTip = 'Specifies the value of the Reminder field.';
+                }
+                field(LastInterestDate; Rec.LastInterestDate)
+                {
+                    ToolTip = 'Specifies the value of the Last Interest Date field.';
+                }
+                field(LastInvoiceNumber; Rec.LastInvoiceNumber)
+                {
+                    ToolTip = 'Specifies the value of the Invoice field.';
+                }
+                field(XMLImport; Rec.XMLImport)
+                {
+                    ToolTip = 'Specifies the value of the XML import field.';
+                }
+                field(VatGroup; Rec.VatGroup)
+                {
+                    ToolTip = 'Specifies the value of the VAT group field.';
+                }
+                field(StdAccount; Rec.StdAccount)
+                {
+                    ToolTip = 'Specifies the value of the Default field.';
+                }
+                field(VatNumberType; Rec.VatNumberType)
+                {
+                    ToolTip = 'Specifies the value of the VAT number type field.';
+                }
 #pragma warning restore
             }
         }
