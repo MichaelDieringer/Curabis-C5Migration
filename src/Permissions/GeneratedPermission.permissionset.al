@@ -1,7 +1,4 @@
-namespace Basepermission;
-
-using CurabisC5.CurabisCMigration;
-using CurabisCMigration.CurabisCMigration;
+namespace CurabisC5.CurabisCMigration;
 
 permissionset 51800 GeneratedPermission
 {

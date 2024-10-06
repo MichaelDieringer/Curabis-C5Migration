@@ -1,6 +1,4 @@
-namespace CurabisCMigration.CurabisCMigration;
-
-using CurabisC5.CurabisCMigration;
+Namespace CurabisC5.CurabisCMigration;
 
 page 51804 "C5 2008 CountryList"
 {

@@ -58,7 +58,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         exit(CopyStr(C5MigrationTypeTxt, 1, 250));
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnFindBatchForItemTransactions', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnFindBatchForItemTransactions, '', false, false)]
     local procedure OnFindBatchForItemTransactions(MigrationType: Text[250]; var ItemJournalBatchName: Code[10])
     var
         C5ItemMigrator: Codeunit "C5 2008 Item Migrator";
@@ -69,7 +69,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         ItemJournalBatchName := C5ItemMigrator.GetHardCodedBatchName();
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnFindBatchForCustomerTransactions', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnFindBatchForCustomerTransactions, '', false, false)]
     local procedure OnFindBatchForCustomerTransactions(MigrationType: Text[250]; var GenJournalBatchName: Code[10])
     var
         C5CustTableMigrator: Codeunit "C5 2008 CustTable Migrator";
@@ -80,7 +80,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         GenJournalBatchName := C5CustTableMigrator.GetHardCodedBatchName();
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnFindBatchForVendorTransactions', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnFindBatchForVendorTransactions, '', false, false)]
     local procedure OnFindBatchForVendorTransactions(MigrationType: Text[250]; var GenJournalBatchName: Code[10])
     var
         C5VendTableMigrator: Codeunit "C5 2008 VendTable Migrator";
@@ -91,7 +91,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         GenJournalBatchName := C5VendTableMigrator.GetHardCodedBatchName();
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnFindBatchForAccountTransactions', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnFindBatchForAccountTransactions, '', false, false)]
     local procedure OnFindBatchForAccountTransactions(DataMigrationStatus: Record "Data Migration Status"; var GenJournalBatchName: Code[10])
     var
         C5LedTransMigrator: Codeunit "C5 2008 LedTrans Migrator";
@@ -105,7 +105,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         GenJournalBatchName := C5LedTransMigrator.GetHardCodedBatchName();
     end;
 
-    [EventSubscriber(ObjectType::CodeUnit, CodeUnit::"Data Migration Facade", 'OnSelectRowFromDashboard', '', false, false)]
+    [EventSubscriber(ObjectType::CodeUnit, CodeUnit::"Data Migration Facade", OnSelectRowFromDashboard, '', false, false)]
     local procedure OnSelectRecordSubscriber(var DataMigrationStatus: Record "Data Migration Status")
     var
         C5LedTrans: Record "C5 2008 LedTrans";
@@ -136,14 +136,14 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         end;
     end;
 
-    [EventSubscriber(ObjectType::CodeUnit, CodeUnit::"Data Migration Facade", 'OnGetMigrationHelpTopicUrl', '', false, false)]
+    [EventSubscriber(ObjectType::CodeUnit, CodeUnit::"Data Migration Facade", OnGetMigrationHelpTopicUrl, '', false, false)]
     local procedure OnGetMigrationHelpTopicUrl(MigrationType: Text; var Url: Text)
     begin
         if MigrationType = C5MigrationTypeTxt Then
             Url := C5HelptTopicUrlTxt;
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnMigrationCompleted', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", OnMigrationCompleted, '', false, false)]
     local procedure OnAllStepsCompletedSubscriber(DataMigrationStatus: Record "Data Migration Status")
     begin
         if not (DataMigrationStatus."Migration Type" = C5MigrationTypeTxt) then
@@ -160,7 +160,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
     /// <param name="Rec">Record "Job Queue Entry".</param>
     /// <param name="xRec">Record "Job Queue Entry".</param>
     /// <param name="RunTrigger">Boolean.</param>
-    [EventSubscriber(ObjectType::Table, Database::"Job Queue Entry", 'OnAfterModifyEvent', '', false, false)]
+    [EventSubscriber(ObjectType::Table, Database::"Job Queue Entry", OnAfterModifyEvent, '', false, false)]
     local procedure OnStatusChanged(Rec: Record "Job Queue Entry"; xRec: Record "Job Queue Entry"; RunTrigger: Boolean)
     var
         newDuration: Duration;
@@ -244,7 +244,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         C5VendTable.DeleteAll();
     end;
 
-    [EventSubscriber(ObjectType::CodeUnit, CodeUnit::"Data Migration Facade", 'OnInitDataMigrationError', '', false, false)]
+    [EventSubscriber(ObjectType::CodeUnit, CodeUnit::"Data Migration Facade", OnInitDataMigrationError, '', false, false)]
     local procedure OnInitDataMigrationError(MigrationType: Text[250]; var BulkFixErrorsButtonEnabled: Boolean)
     begin
         if MigrationType <> C5MigrationTypeTxt then
@@ -252,7 +252,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         BulkFixErrorsButtonEnabled := true;
     end;
 
-    [EventSubscriber(ObjectType::CodeUnit, CodeUnit::"Data Migration Facade", 'OnBatchEditFromErrorView', '', false, false)]
+    [EventSubscriber(ObjectType::CodeUnit, CodeUnit::"Data Migration Facade", OnBatchEditFromErrorView, '', false, false)]
     local procedure OnBatchEditFromErrorView(MigrationType: Text[250]; DestinationTableId: Integer)
     var
         C5LedTrans: Record "C5 2008 LedTrans";

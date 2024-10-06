@@ -1,6 +1,4 @@
-namespace CurabisCMigration.CurabisCMigration;
-
-using CurabisC5.CurabisCMigration;
+namespace CurabisC5.CurabisCMigration;
 
 page 51803 "C5 2008 ProcCodeList"
 {

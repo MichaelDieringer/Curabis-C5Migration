@@ -5,7 +5,9 @@ Extended and stabilized compared to Microsofts C5 2012 tool.
 
 Pre installment conditions:
 
-1.) Enabling of Sales Price Experience in Feature Management (styring af funktioner)
+1.) Afinstaller og slet Microsoft C5 2012 migreringsværktøj i app-oversigten (husk at slette app data)
+2.) Installer CURABIS C5 2008 migreringsværktøj
+2.) Enabling of Sales Price Experience in Feature Management (styring af funktioner)
 
 
 

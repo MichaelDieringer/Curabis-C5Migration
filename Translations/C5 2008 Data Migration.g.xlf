@@ -3768,6 +3768,121 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Company Settings - Action Setups - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3452722840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>2008 Country</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 1856816140 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Country/region field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control Country - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 3561154705 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Currency field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control Currency - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 3896559642 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Country name field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control ExtCountryName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 1173926529 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Intrastat field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control IntrastatCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 3232262567 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Language field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control Language_ - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 1195115940 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Last changed field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control LastChanged - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 543181849 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Purch. VAT field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control PurchVat - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 956471723 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Row number field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control RecId - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 903090733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Sales VAT field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control SalesVat - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Type field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3452722840 - Control 2234164610 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Country code field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control VatCountryCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4086497282 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>2008 CountryList</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4086497282 - Control 1856816140 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Country/region field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control Country - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4086497282 - Control 3561154705 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Currency field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control Currency - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4086497282 - Control 3896559642 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Country name field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control ExtCountryName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4086497282 - Control 1173926529 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Intrastat field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control IntrastatCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4086497282 - Control 543181849 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Purch. VAT field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control PurchVat - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4086497282 - Control 956471723 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Row number field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control RecId - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4086497282 - Control 903090733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Sales VAT field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control SalesVat - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4086497282 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Type field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4086497282 - Control 2234164610 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Country code field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control VatCountryCode - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 1209219831 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>C5 Customer Contact Persons</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5022,6 +5137,31 @@
           <source>Specifies the value of the Zip code/City field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Employee - Control ZipCity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3938609888 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>C5 2008 EmployeeList</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 EmployeeList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3938609888 - Control 1285973296 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Email field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 EmployeeList - Control Email - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3938609888 - Control 1498446062 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Employee field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 EmployeeList - Control Employee - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3938609888 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 EmployeeList - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3938609888 - Control 646935216 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Phone field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 EmployeeList - Control Phone - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 225009624 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>C5 2008 Bill of Materials</source>
@@ -6868,6 +7008,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 ProcCode - Control Type - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 4062053983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>2008 ProcCodeList</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 ProcCodeList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4062053983 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 ProcCodeList - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4062053983 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 ProcCodeList - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4062053983 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 ProcCodeList - Control Type - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 1542737775 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>C5 2008 Vendor Contact Persons</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -8047,166 +8207,6 @@
           <source>Outside</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum C5 2008 VAT Calulation type - EnumValue Outside - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>2008 Country</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>General</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control General - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 1856816140 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Country/region field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control Country - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 3561154705 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Currency field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control Currency - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 3896559642 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Country name field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control ExtCountryName - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 1173926529 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Intrastat field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control IntrastatCode - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 3232262567 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Language field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control Language_ - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 1195115940 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Last changed field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control LastChanged - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 543181849 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Purch. VAT field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control PurchVat - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 956471723 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Row number field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control RecId - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 903090733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Sales VAT field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control SalesVat - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Type field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control Type - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3452722840 - Control 2234164610 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Country code field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Country - Control VatCountryCode - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4086497282 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>2008 CountryList</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 4086497282 - Control 1856816140 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Country/region field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control Country - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4086497282 - Control 3561154705 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Currency field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control Currency - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4086497282 - Control 3896559642 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Country name field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control ExtCountryName - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4086497282 - Control 1173926529 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Intrastat field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control IntrastatCode - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4086497282 - Control 543181849 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Purch. VAT field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control PurchVat - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4086497282 - Control 956471723 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Row number field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control RecId - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4086497282 - Control 903090733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Sales VAT field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control SalesVat - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4086497282 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Type field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control Type - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4086497282 - Control 2234164610 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Country code field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CountryList - Control VatCountryCode - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3938609888 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>C5 2008 EmployeeList</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 EmployeeList - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3938609888 - Control 1285973296 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Email field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 EmployeeList - Control Email - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3938609888 - Control 1498446062 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Employee field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 EmployeeList - Control Employee - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3938609888 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Name field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 EmployeeList - Control Name - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3938609888 - Control 646935216 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Phone field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 EmployeeList - Control Phone - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4062053983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>2008 ProcCodeList</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 ProcCodeList - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 4062053983 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Code field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 ProcCodeList - Control Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4062053983 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Name field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 ProcCodeList - Control Name - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4062053983 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Type field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 ProcCodeList - Control Type - Property ToolTip</note>
         </trans-unit>
       </group>
     </body>

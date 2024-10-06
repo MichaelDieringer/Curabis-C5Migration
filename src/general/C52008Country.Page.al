@@ -1,6 +1,4 @@
-namespace CurabisCMigration.CurabisCMigration;
-
-using CurabisC5.CurabisCMigration;
+namespace CurabisC5.CurabisCMigration;
 
 page 51805 "C5 2008 Country"
 {
@@ -8,7 +6,8 @@ page 51805 "C5 2008 Country"
     Caption = '2008 Country';
     PageType = Card;
     SourceTable = "C5 2008 Country";
-    
+    UsageCategory = None;
+
     layout
     {
         area(Content)
@@ -16,7 +15,7 @@ page 51805 "C5 2008 Country"
             group(General)
             {
                 Caption = 'General';
-                
+
                 field(RecId; Rec.RecId)
                 {
                     ToolTip = 'Specifies the value of the Row number field.', Comment = '%';
