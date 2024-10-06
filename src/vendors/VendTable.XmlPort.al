@@ -79,7 +79,13 @@ xmlport 51881 "C5 VendTable"
                 fieldelement(PurchGroup; C5VendTable.PurchGroup) { }
                 fieldelement(TradeCode; C5VendTable.TradeCode) { }
                 fieldelement(TransportCode; C5VendTable.TransportCode) { }
-                fieldelement(Email; C5VendTable.Email) { }
+                fieldelement(Email; C5VendTable.Email)
+                {
+                    trigger OnAfterAssignField()
+                    begin
+                        C5HelperFunctions.CheckPossibleSplitEmails(C5VendTable.Email);
+                    end;
+                }
                 fieldelement(URL; C5VendTable.URL) { }
                 fieldelement(CellPhone; C5VendTable.CellPhone) { }
                 fieldelement(KrakNumber; C5VendTable.KrakNumber) { }

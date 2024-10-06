@@ -10,7 +10,7 @@ page 51888 "C5 2008 InvenPrice"
     SourceTable = "C5 2008 InvenPrice";
     DeleteAllowed = false;
     InsertAllowed = false;
-    Caption = 'C5 Inventory Prices';
+    Caption = 'C5 2008 Inventory Prices';
     UsageCategory = None;
     Applicationarea = All;
     layout

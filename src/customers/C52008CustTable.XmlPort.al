@@ -129,7 +129,13 @@ xmlport 51864 "C5 2008 CustTable"
                 /*  AZ  */
                 fieldelement(TransportCode; C5CustTable.TransportCode) { }
                 /*  BA  */
-                fieldelement(Email; C5CustTable.Email) { }
+                fieldelement(Email; C5CustTable.Email)
+                {
+                    trigger OnAfterAssignField()
+                    begin
+                        C5HelperFunctions.CheckPossibleSplitEmails(C5CustTable.Email);
+                    end;
+                }
                 /*  BB  */
                 fieldelement(URL; C5CustTable.URL) { }
                 /*  BC  */

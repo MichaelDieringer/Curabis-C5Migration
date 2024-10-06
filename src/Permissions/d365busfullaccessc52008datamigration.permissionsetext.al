@@ -1,13 +1,14 @@
 namespace CurabisC5.CurabisCMigration;
 using System.Security.AccessControl;
 
-permissionsetextension 55311 "D365 BUS FULL ACCESS - C5 2008 Data Migration" extends "D365 FULL ACCESS"
+permissionsetextension 51803 "D365 BUS FULL ACCESS - C5 2008 Data Migration" extends "D365 FULL ACCESS"
 {
     Permissions = tabledata "C5 2008 Centre" = RIMD,
                   tabledata "C5 2008 CN8Code" = RIMD,
                   tabledata "C5 2008 Country" = RIMD,
                   tabledata "C5 CustContact" = RIMD,
                   tabledata "C5 CustDiscGroup" = RIMD,
+                  tabledata "C5 2008 Migration Setup" = RIMD,
                   tabledata "C5 2008 CustGroup" = RIMD,
                   tabledata "C5 2008 CustTable" = RIMD,
                   tabledata "C5 2008 CustTrans" = RIMD,

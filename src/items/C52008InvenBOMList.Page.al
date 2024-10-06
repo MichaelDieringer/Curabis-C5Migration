@@ -8,7 +8,7 @@ page 51898 "C5 2008 InvenBOM List"
 {
     PageType = List;
     SourceTable = "C5 2008 InvenBOM";
-    Caption = 'Bill of Materials';
+    Caption = 'C5 2008 Bill of Materials';
     ApplicationArea = All;
     UsageCategory = None;
     layout

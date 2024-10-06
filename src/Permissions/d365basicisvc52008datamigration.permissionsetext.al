@@ -1,11 +1,12 @@
 namespace CurabisC5.CurabisCMigration;
 using System.Security.AccessControl;
 
-permissionsetextension 55738 "D365 BASIC ISV - C5 2008 Data Migration" extends "D365 BASIC ISV"
+permissionsetextension 51802 "D365 BASIC ISV - C5 2008 Data Migration" extends "D365 BASIC ISV"
 {
     Permissions = tabledata "C5 2008 Centre" = RIMD,
                   tabledata "C5 2008 CN8Code" = RIMD,
                   tabledata "C5 2008 Country" = RIMD,
+                  tabledata "C5 2008 Migration Setup" = RIMD,
                   tabledata "C5 CustContact" = RIMD,
                   tabledata "C5 CustDiscGroup" = RIMD,
                   tabledata "C5 2008 CustGroup" = RIMD,

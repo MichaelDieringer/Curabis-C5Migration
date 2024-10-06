@@ -10,9 +10,9 @@ page 51886 "C5 VendDiscGroup"
     SourceTable = "C5 VendDiscGroup";
     DeleteAllowed = false;
     InsertAllowed = false;
-    Caption = 'C5 Vendor Discount Groups';
+    Caption = 'C5 2008 Vendor Discount Groups';
     ApplicationArea = All;
-    UsageCategory = None;
+    UsageCategory = Lists;
 
     layout
     {

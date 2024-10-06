@@ -10,7 +10,7 @@ page 51894 "C5 VendTrans"
     SourceTable = "C5 VendTrans";
     DeleteAllowed = false;
     InsertAllowed = false;
-    Caption = 'C5 Vendor Entries';
+    Caption = 'C5 2008 Vendor Entries';
     ApplicationArea = All;
     UsageCategory = Lists;
     layout

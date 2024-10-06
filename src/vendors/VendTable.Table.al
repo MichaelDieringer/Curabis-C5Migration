@@ -47,6 +47,8 @@ table 51861 "C5 VendTable"
         field(9; Country; Text[30])
         {
             Caption = 'Country/region';
+            TableRelation = "C5 2008 Country";
+            ValidateTableRelation = false;
         }
         field(10; Attention; Text[30])
         {

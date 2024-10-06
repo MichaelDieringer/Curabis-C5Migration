@@ -1,7 +1,7 @@
 namespace CurabisC5.CurabisCMigration;
 using System.Security.AccessControl;
 
-permissionsetextension 54718 "D365 READ - C5 2008 Data Migration" extends "D365 READ"
+permissionsetextension 51806 "D365 READ - C5 2008 Data Migration" extends "D365 READ"
 {
     Permissions = tabledata "C5 2008 Centre" = R,
                   tabledata "C5 2008 CN8Code" = R,
@@ -10,6 +10,7 @@ permissionsetextension 54718 "D365 READ - C5 2008 Data Migration" extends "D365 
                   tabledata "C5 CustDiscGroup" = R,
                   tabledata "C5 2008 CustGroup" = R,
                   tabledata "C5 2008 CustTable" = R,
+                  tabledata "C5 2008 Migration Setup" = RIMD,
                   tabledata "C5 2008 CustTrans" = R,
                   tabledata "C5 2008 Data Loader Status" = R,
                   tabledata "C5 2008 Delivery" = R,

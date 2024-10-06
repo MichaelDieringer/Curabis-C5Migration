@@ -13,9 +13,9 @@ page 51901 "C5 2008 InvenTable List"
     DeleteAllowed = false;
     InsertAllowed = false;
     ModifyAllowed = true;
-    Caption = 'Items';
+    Caption = 'C5 2008 Items';
     ApplicationArea = all;
-    UsageCategory = None;
+    UsageCategory = Lists;
 
     layout
     {

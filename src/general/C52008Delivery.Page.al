@@ -3,7 +3,6 @@ namespace CurabisC5.CurabisCMigration;
 /// <summary>
 /// Page C5 Delivery (ID 51882).
 /// </summary>
-#pragma implicitwith disable
 page 51882 "C5 2008 Delivery"
 {
     PageType = Card;
@@ -31,9 +30,8 @@ page 51882 "C5 2008 Delivery"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Name field.';
                 }
-#pragma warning restore
             }
         }
     }
 }
-#pragma implicitwith restore
+

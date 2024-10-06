@@ -1,12 +1,13 @@
 namespace CurabisC5.CurabisCMigration;
 using System.Security.AccessControl;
 
-permissionsetextension 58353 "INTELLIGENT CLOUD - C5 2008 Data Migration" extends "INTELLIGENT CLOUD"
+permissionsetextension 51808 "INTELLIGENT CLOUD - C5 2008 Data Migration" extends "INTELLIGENT CLOUD"
 {
     Permissions = tabledata "C5 2008 Centre" = RIMD,
                   tabledata "C5 2008 CN8Code" = RIMD,
                   tabledata "C5 2008 Country" = RIMD,
                   tabledata "C5 CustContact" = RIMD,
+                  tabledata "C5 2008 Migration Setup" = RIMD,
                   tabledata "C5 CustDiscGroup" = RIMD,
                   tabledata "C5 2008 CustGroup" = RIMD,
                   tabledata "C5 2008 CustTable" = RIMD,

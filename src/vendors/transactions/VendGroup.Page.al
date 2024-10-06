@@ -10,7 +10,7 @@ page 51893 "C5 VendGroup"
     SourceTable = "C5 VendGroup";
     DeleteAllowed = false;
     InsertAllowed = false;
-    Caption = 'C5 Vendor Groups';
+    Caption = 'C5 2008 Vendor Groups';
     ApplicationArea = All;
     UsageCategory = None;
     layout

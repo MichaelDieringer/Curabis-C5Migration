@@ -10,7 +10,7 @@ page 51890 "C5 2008 InvenTrans"
     SourceTable = "C5 2008 InvenTrans";
     DeleteAllowed = true;
     InsertAllowed = false;
-    Caption = 'C5 Inventory Entries';
+    Caption = 'C5 2008 Inventory Entries';
     ApplicationArea = All;
     UsageCategory = Lists;
 

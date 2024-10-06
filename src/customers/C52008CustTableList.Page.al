@@ -13,7 +13,7 @@ page 51899 "C5 2008 CustTable List"
     DeleteAllowed = false;
     InsertAllowed = false;
     ModifyAllowed = true;
-    Caption = 'Customers';
+    Caption = 'C5 2008 Customers';
     ApplicationArea = all;
     UsageCategory = Lists;
 

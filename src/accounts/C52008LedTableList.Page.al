@@ -13,9 +13,9 @@ page 51903 "C5 2008 LedTable List"
     DeleteAllowed = false;
     InsertAllowed = false;
     ModifyAllowed = true;
-    Caption = 'Accounts';
+    Caption = 'C5 2008 Accounts';
     ApplicationArea = All;
-    UsageCategory = None;
+    UsageCategory = Lists;
     layout
     {
         area(content)

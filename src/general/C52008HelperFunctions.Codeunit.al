@@ -603,6 +603,14 @@ codeunit 51865 "C5 2008 Helper Functions"
         exit(true);
     end;
 
+    procedure CheckPossibleSplitEmails(var Email: Text[80])
+    begin
+        if Email = '' then
+            exit;
+        if StrPos(Email, ',') > 0 then
+            Email := ConvertStr(Email, ',', ';');
+    end;
+
     /// <summary>
     /// ReplaceLettersSubstitutions.
     /// </summary>

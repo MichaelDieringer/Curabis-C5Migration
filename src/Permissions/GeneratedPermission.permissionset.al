@@ -9,6 +9,7 @@ permissionset 51800 GeneratedPermission
         tabledata "C5 2008 Centre" = RIMD,
         tabledata "C5 2008 Country" = RIMD,
         tabledata "C5 2008 CustGroup" = RIMD,
+        tabledata "C5 2008 Migration Setup" = RIMD,
         tabledata "C5 2008 CustTable" = RIMD,
         tabledata "C5 2008 CustTrans" = RIMD,
         tabledata "C5 2008 Data Loader Status" = RIMD,

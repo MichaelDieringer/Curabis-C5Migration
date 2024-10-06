@@ -3,10 +3,11 @@ using System.Security.AccessControl;
 /// <summary>
 /// Unknown D365 BASIC - C5 2008 Data Migration (ID 17036) extends Record D365 BASIC.
 /// </summary>
-permissionsetextension 57036 "D365 BASIC - C5 2008 Data Migration" extends "D365 BASIC"
+permissionsetextension 51800 "D365 BASIC - C5 2008 Data Migration" extends "D365 BASIC"
 {
     Permissions = tabledata "C5 2008 Centre" = RIMD,
                   tabledata "C5 2008 CN8Code" = RIMD,
+                  tabledata "C5 2008 Migration Setup" = RIMD,
                   tabledata "C5 2008 Country" = RIMD,
                   tabledata "C5 CustContact" = RIMD,
                   tabledata "C5 CustDiscGroup" = RIMD,

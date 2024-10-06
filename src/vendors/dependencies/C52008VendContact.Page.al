@@ -10,9 +10,9 @@ page 51905 "C5 2008 VendContact"
     SourceTable = "C5 2008 VendContact";
     DeleteAllowed = false;
     InsertAllowed = false;
-    Caption = 'C5 Vendor Contact Persons';
+    Caption = 'C5 2008 Vendor Contact Persons';
     ApplicationArea = All;
-    UsageCategory = None;
+    UsageCategory = Lists;
     layout
     {
         area(content)

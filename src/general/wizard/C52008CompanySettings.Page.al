@@ -11,7 +11,8 @@ page 51904 "C5 2008 Company Settings"
 {
     Caption = ' ';
     PageType = NavigatePage;
-
+    ApplicationArea = All;
+    UsageCategory = None;
     layout
     {
         area(content)
@@ -84,6 +85,18 @@ page 51904 "C5 2008 Company Settings"
                     IsSalesPriceFeatureEnabled := FeatureManagementFacade.IsEnabled('Salesprices');
                 end;
             }
+            action(Setups)
+            {
+                ApplicationArea = All;
+                Caption = 'Setups';
+                InFooterBar = true;
+                Image = Setup;
+                ToolTip = 'Open the Setups page.';
+                trigger OnAction();
+                begin
+                    Page.RunModal(Page::"C5 2008 Migration Setup");
+                end;
+            }
         }
     }
     var
@@ -99,21 +112,27 @@ page 51904 "C5 2008 Company Settings"
         AccountingPeriod: Record "Accounting Period";
         GeneralLedgerSetup: Record "General Ledger Setup";
         SalesReceivableSetup: Record "Sales & Receivables Setup";
+        C52008MigrationSetup: Record "C5 2008 Migration Setup";
         FeatureManagementFacade: Codeunit "Feature Management Facade";
     begin
+        C52008MigrationSetup.Get();
+        CurrentPeriodValue := C52008MigrationSetup."Detailed G/L entries (start)";
+
         IsSalesPriceFeatureEnabled := FeatureManagementFacade.IsEnabled('Salesprices');
         GeneralLedgerSetup.Get();
         if GeneralLedgerSetup."LCY Code" = '' then
             IsLocalCurrencyFieldVisible := true;
         SalesReceivableSetup.Get();
 
-        AccountingPeriod.SetRange("New Fiscal Year", true);
-        AccountingPeriod.SetFilter("Starting Date", '<=%1', WorkDate());
-        AccountingPeriod.SetAscending("Starting Date", true);
-        if AccountingPeriod.FindLast() then
-            CurrentPeriodValue := AccountingPeriod."Starting Date"
-        else
-            CurrentPeriodValue := CalcDate('<CY-1Y+1D>', WorkDate());
+        if CurrentPeriodValue = 0D then begin
+            AccountingPeriod.SetRange("New Fiscal Year", true);
+            AccountingPeriod.SetFilter("Starting Date", '<=%1', WorkDate());
+            AccountingPeriod.SetAscending("Starting Date", true);
+            if AccountingPeriod.FindLast() then
+                CurrentPeriodValue := AccountingPeriod."Starting Date"
+            else
+                CurrentPeriodValue := CalcDate('<CY-1Y+1D>', WorkDate());
+        end;
     end;
 
     trigger OnQueryClosePage(CloseAction: Action): Boolean;

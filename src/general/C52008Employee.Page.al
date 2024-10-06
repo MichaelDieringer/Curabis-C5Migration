@@ -19,35 +19,26 @@ page 51874 "C5 2008 Employee"
             group(General)
             {
 
-
                 field(Employee; Rec.Employee)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Employee field.';
                 }
-
-
                 field(Name; Rec.Name)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Name field.';
                 }
-
-
                 field(Address1; Rec.Address1)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Address field.';
                 }
-
-
                 field(Address2; Rec.Address2)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Address field.';
                 }
-
-
                 field(ZipCity; Rec.ZipCity)
                 {
                     ApplicationArea = All;

@@ -349,11 +349,15 @@ codeunit 51867 "C5 2008 Item Migrator"
         C5InvenTrans: Record "C5 2008 InvenTrans";
         C5InvenItemGroup: Record "C5 2008 InvenItemGroup";
         C5InvenLocation: Record "C5 2008 InvenLocation";
+        C52008MigrationSetup: Record "C5 2008 Migration Setup";
         C5LedTableMigrator: Codeunit "C5 2008 LedTable Migrator";
         C5HelperFunctions: Codeunit "C5 2008 Helper Functions";
         SerialNumber: Code[20];
         LotNumber: Code[20];
     begin
+        C52008MigrationSetup.Get();
+        if C52008MigrationSetup."Conversion of items".AsInteger() < C52008MigrationSetup."Conversion of items"::"Base and Transactions".AsInteger() then
+            exit;
         if not ChartOfAccountsMigrated then
             exit;
         if RecordIdToMigrate.TableNo() <> Database::"C5 2008 InvenTable" then
@@ -381,7 +385,7 @@ codeunit 51867 "C5 2008 Item Migrator"
                     C5InvenTable.ItemTracking::"Serial number":
                         SerialNumber := C5InvenTrans.SerialNumber;
                 end;
-                IF C5InvenTrans.InvenLocation <> '' then begin
+                if C5InvenTrans.InvenLocation <> '' then begin
                     C5InvenLocation.SetRange(InvenLocation, C5InvenTrans.InvenLocation);
                     C5InvenLocation.FindFirst();
                     Sender.CreateLocationIfNeeded(C5InvenLocation.InvenLocation, C5InvenLocation.Name);

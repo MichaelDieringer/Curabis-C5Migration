@@ -12,7 +12,7 @@ page 51902 "C5 2008 LedTrans List"
     DeleteAllowed = false;
     InsertAllowed = false;
     ModifyAllowed = true;
-    Caption = 'C5 Ledger Entries';
+    Caption = 'C5 2008 edger Entries';
     ApplicationArea = all;
     UsageCategory = Lists;
 

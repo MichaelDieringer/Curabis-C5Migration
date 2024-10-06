@@ -12,7 +12,7 @@ page 51906 "C5 CustContact"
     InsertAllowed = false;
     Caption = 'C5 Customer Contact Persons';
     ApplicationArea = All;
-    UsageCategory = None;
+    UsageCategory = Lists;
     layout
     {
         area(content)

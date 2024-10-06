@@ -10,7 +10,7 @@ page 51891 "C5 2008 CustGroup"
     SourceTable = "C5 2008 CustGroup";
     DeleteAllowed = false;
     InsertAllowed = false;
-    Caption = 'C5 Customer Groups';
+    Caption = 'C5 2008  Customer Groups';
     ApplicationArea = All;
     UsageCategory = None;
 

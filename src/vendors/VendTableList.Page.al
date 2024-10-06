@@ -13,9 +13,9 @@ page 51900 "C5 VendTable List"
     DeleteAllowed = false;
     InsertAllowed = false;
     ModifyAllowed = true;
-    Caption = 'Vendors';
+    Caption = 'C5 2008 Vendors';
     ApplicationArea = All;
-    UsageCategory = None;
+    UsageCategory = Lists;
 
     layout
     {

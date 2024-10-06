@@ -10,7 +10,7 @@ page 51892 "C5 2008 CustTrans"
     SourceTable = "C5 2008 CustTrans";
     DeleteAllowed = false;
     InsertAllowed = false;
-    Caption = 'C5 Customer Entries';
+    Caption = 'C5 2008 Customer Entries';
     ApplicationArea = All;
     UsageCategory = Lists;
 
