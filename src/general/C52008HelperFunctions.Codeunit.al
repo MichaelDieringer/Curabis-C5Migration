@@ -892,7 +892,7 @@ codeunit 51865 "C5 2008 Helper Functions"
     /// <returns>Return value of type Code[10].</returns>
     procedure GetLanguageCodeForC5Language(C5Language: Option): Code[10]
     var
-        C5VendTable: Record "C5 VendTable";
+        C5VendTable: Record "C5 2008 VendTable";
         Language: Record Language;
         CustomerDataMigrationFacade: Codeunit "Customer Data Migration Facade";
         AbbreviatedLanguage: Code[3];

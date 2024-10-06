@@ -33,7 +33,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
     begin
         DataMigrationStatusFacade.InitStatusLine(GetC5MigrationTypeTxt(), Database::Item, TotalItemNb, Database::"C5 2008 InvenTable", Codeunit::"C5 2008 Item Migrator");
         DataMigrationStatusFacade.InitStatusLine(GetC5MigrationTypeTxt(), Database::Customer, TotalCustomerNb, Database::"C5 2008 CustTable", Codeunit::"C5 2008 CustTable Migrator");
-        DataMigrationStatusFacade.InitStatusLine(GetC5MigrationTypeTxt(), Database::Vendor, TotalVendorNb, Database::"C5 VendTable", Codeunit::"C5 VendTable Migrator");
+        DataMigrationStatusFacade.InitStatusLine(GetC5MigrationTypeTxt(), Database::Vendor, TotalVendorNb, Database::"C5 2008 VendTable", Codeunit::"C5 2008 VendTable Migrator");
         DataMigrationStatusFacade.InitStatusLine(GetC5MigrationTypeTxt(), Database::"G/L Account", TotalChartOfAccountNb, Database::"C5 2008 LedTable", Codeunit::"C5 2008 LedTable Migrator");
         DataMigrationStatusFacade.InitStatusLine(GetC5MigrationTypeTxt(), Database::"C5 2008 LedTrans", TotalLegacyNb, 0, Codeunit::"C5 2008 LedTrans Migrator");
         C5SchemaParameters.GetSingleInstance();
@@ -83,7 +83,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Data Migration Facade", 'OnFindBatchForVendorTransactions', '', false, false)]
     local procedure OnFindBatchForVendorTransactions(MigrationType: Text[250]; var GenJournalBatchName: Code[10])
     var
-        C5VendTableMigrator: Codeunit "C5 VendTable Migrator";
+        C5VendTableMigrator: Codeunit "C5 2008 VendTable Migrator";
     begin
         if MigrationType <> C5MigrationTypeTxt then
             exit;
@@ -112,7 +112,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         C5CustTable: Record "C5 2008 CustTable";
         C5LedTable: Record "C5 2008 LedTable";
         C5InvenTable: Record "C5 2008 InvenTable";
-        C5VendTable: Record "C5 VendTable";
+        C5VendTable: Record "C5 2008 VendTable";
     begin
         if not (DataMigrationStatus."Migration Type" = C5MigrationTypeTxt) then
             exit;
@@ -132,7 +132,7 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
                     Page.Run(Page::"C5 2008 InvenTable List");
             Database::Vendor:
                 if not C5VendTable.IsEmpty() then
-                    Page.Run(Page::"C5 VendTable List");
+                    Page.Run(Page::"C5 2008 VendTable List");
         end;
     end;
 
@@ -175,9 +175,9 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
     var
         C5LedTrans: Record "C5 2008 LedTrans";
         C5LedTable: Record "C5 2008 LedTable";
-        C5CustDiscGroup: Record "C5 CustDiscGroup";
-        C5ProcCode: Record "C5 ProcCode";
-        C5CustContact: Record "C5 CustContact";
+        C5CustDiscGroup: Record "C5 2008 CustDiscGroup";
+        C5ProcCode: Record "C5 2008 ProcCode";
+        C5CustContact: Record "C5 2008 CustContact";
         C5CustGroup: Record "C5 2008 CustGroup";
         C5CustRrans: Record "C5 2008 CustTrans";
         C5CustTable: Record "C5 2008 CustTable";
@@ -202,11 +202,11 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         C5InvenTrans: Record "C5 2008 InvenTrans";
         C5InvenTable: Record "C5 2008 InvenTable";
         C5InvenBOM: Record "C5 2008 InvenBOM";
-        C5VendDiscGroup: Record "C5 VendDiscGroup";
+        C5VendDiscGroup: Record "C5 2008 VendDiscGroup";
         C5VendContact: Record "C5 2008 VendContact";
-        C5VendGroup: Record "C5 VendGroup";
-        C5VendTrans: Record "C5 VendTrans";
-        C5VendTable: Record "C5 VendTable";
+        C5VendGroup: Record "C5 2008 VendGroup";
+        C5VendTrans: Record "C5 2008 VendTrans";
+        C5VendTable: Record "C5 2008 VendTable";
     begin
         C5LedTrans.DeleteAll();
         C5LedTable.DeleteAll();
@@ -259,13 +259,13 @@ codeunit 51870 "C5 2008 Migr. Dashboard Mgt"
         C5CustTable: Record "C5 2008 CustTable";
         C5LedTable: Record "C5 2008 LedTable";
         C5InventTable: Record "C5 2008 InvenTable";
-        C5VendTable: Record "C5 VendTable";
+        C5VendTable: Record "C5 2008 VendTable";
         DataMigrationError: Record "Data Migration Error";
         C5LedTransList: Page "C5 2008 LedTrans List";
         C5CustTableList: Page "C5 2008 CustTable List";
         C5LedTableList: Page "C5 2008 LedTable List";
         C5InventTableList: Page "C5 2008 InvenTable List";
-        C5VendTableList: Page "C5 VendTable List";
+        C5VendTableList: Page "C5 2008 VendTable List";
     begin
         if MigrationType <> C5MigrationTypeTxt Then
             exit;

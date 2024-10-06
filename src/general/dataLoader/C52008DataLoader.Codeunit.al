@@ -138,7 +138,7 @@ codeunit 51868 "C5 2008 Data Loader"
         C5DataLoaderStatus.IncrementProccessedRecords(1000);
     end;
 
-    [EventSubscriber(ObjectType::XmlPort, XMLPORT::"C5 VendTrans", OnThousandVendorTransactionsRead, '', true, true)]
+    [EventSubscriber(ObjectType::XmlPort, XMLPORT::"C5 2008 VendTrans", OnThousandVendorTransactionsRead, '', true, true)]
     local procedure OnThousandVendorTransactionsRead()
     var
         C5DataLoaderStatus: Record "C5 2008 Data Loader Status";
@@ -313,9 +313,9 @@ codeunit 51868 "C5 2008 Data Loader"
 
     local procedure LoadC5ProcCodes()
     var
-        C5ProcCode: Record "C5 ProcCode";
+        C5ProcCode: Record "C5 2008 ProcCode";
         TempBlob: Codeunit "Temp Blob";
-        C5ProcCodeXmlPort: XmlPort "C5 ProcCode";
+        C5ProcCodeXmlPort: XmlPort "C5 2008 ProcCode";
         CsvProcessedStream: InStream;
     begin
         if not OpenRecordFileAndProcessSubsts(C5ProcCode, CsvProcessedStream, TempBlob) then
@@ -384,9 +384,9 @@ codeunit 51868 "C5 2008 Data Loader"
 
     local procedure LoadC5CustDiscGroups()
     var
-        C5CustDiscGroup: Record "C5 CustDiscGroup";
+        C5CustDiscGroup: Record "C5 2008 CustDiscGroup";
         TempBlob: Codeunit "Temp Blob";
-        C5CustDiscGroupXmlPort: XmlPort "C5 CustDiscGroup";
+        C5CustDiscGroupXmlPort: XmlPort "C5 2008 CustDiscGroup";
         CsvProcessedStream: InStream;
     begin
         if not OpenRecordFileAndProcessSubsts(C5CustDiscGroup, CsvProcessedStream, TempBlob) then
@@ -398,9 +398,9 @@ codeunit 51868 "C5 2008 Data Loader"
 
     local procedure LoadC5VendorDiscGroups()
     var
-        C5VendDiscGroup: Record "C5 VendDiscGroup";
+        C5VendDiscGroup: Record "C5 2008 VendDiscGroup";
         TempBlob: Codeunit "Temp Blob";
-        C5VendDiscGroupXmlPort: XmlPort "C5 VendDiscGroup";
+        C5VendDiscGroupXmlPort: XmlPort "C5 2008 VendDiscGroup";
         CsvProcessedStream: InStream;
     begin
         if not OpenRecordFileAndProcessSubsts(C5VendDiscGroup, CsvProcessedStream, TempBlob) then
@@ -496,9 +496,9 @@ codeunit 51868 "C5 2008 Data Loader"
 
     local procedure LoadC5Vendors()
     var
-        C5VendTable: Record "C5 VendTable";
+        C5VendTable: Record "C5 2008 VendTable";
         TempBlob: Codeunit "Temp Blob";
-        C5VendTableXmlPort: XmlPort "C5 VendTable";
+        C5VendTableXmlPort: XmlPort "C5 2008 VendTable";
         CsvProcessedStream: InStream;
     begin
         if not OpenRecordFileAndProcessSubsts(C5VendTable, CsvProcessedStream, TempBlob) then
@@ -510,9 +510,9 @@ codeunit 51868 "C5 2008 Data Loader"
 
     local procedure LoadC5VendorGroups()
     var
-        C5VendGroup: Record "C5 VendGroup";
+        C5VendGroup: Record "C5 2008 VendGroup";
         TempBlob: Codeunit "Temp Blob";
-        C5VendGroupXmlPort: XmlPort "C5 VendGroup";
+        C5VendGroupXmlPort: XmlPort "C5 2008 VendGroup";
         CsvProcessedStream: InStream;
     begin
         if not OpenRecordFileAndProcessSubsts(C5VendGroup, CsvProcessedStream, TempBlob) then
@@ -524,9 +524,9 @@ codeunit 51868 "C5 2008 Data Loader"
 
     local procedure LoadC5VendorTrans()
     var
-        C5VendTrans: Record "C5 VendTrans";
+        C5VendTrans: Record "C5 2008 VendTrans";
         TempBlob: Codeunit "Temp Blob";
-        C5VendTransXmlPort: XmlPort "C5 VendTrans";
+        C5VendTransXmlPort: XmlPort "C5 2008 VendTrans";
         CsvProcessedStream: InStream;
     begin
         if not OpenRecordFileAndProcessSubsts(C5VendTrans, CsvProcessedStream, TempBlob) then
@@ -611,9 +611,9 @@ codeunit 51868 "C5 2008 Data Loader"
 
     local procedure LoadC5CustContact()
     var
-        C5CustContact: Record "C5 CustContact";
+        C5CustContact: Record "C5 2008 CustContact";
         TempBlob: Codeunit "Temp Blob";
-        C5CustContactXmlPort: XmlPort "C5 CustContact";
+        C5CustContactXmlPort: XmlPort "C5 2008 CustContact";
         CsvProcessedStream: InStream;
     begin
         if not OpenRecordFileAndProcessSubsts(C5CustContact, CsvProcessedStream, TempBlob) then

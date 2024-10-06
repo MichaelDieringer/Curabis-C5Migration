@@ -19,7 +19,7 @@ codeunit 51873 "C5 2008 File definition"
                 FileNameOut := 'exp00207.kom';
             Database::"C5 2008 Country":
                 FileNameOut := 'exp00007.kom';
-            Database::"C5 CustDiscGroup":
+            Database::"C5 2008 CustDiscGroup":
                 FileNameOut := 'exp00040.kom';
             Database::"C5 2008 CustTable":
                 FileNameOut := 'exp00033.kom';
@@ -57,7 +57,7 @@ codeunit 51873 "C5 2008 File definition"
                 FileNameOut := 'exp00030.kom';
             Database::"C5 2008 Payment":
                 FileNameOut := 'exp00021.kom';
-            Database::"C5 ProcCode":
+            Database::"C5 2008 ProcCode":
                 FileNameOut := 'exp00094.kom';
             Database::"C5 2008 Purpose":
                 FileNameOut := 'exp00183.kom';
@@ -65,19 +65,19 @@ codeunit 51873 "C5 2008 File definition"
                 FileNameOut := 'exp00020.kom';
             Database::"C5 2008 VatGroup":
                 FileNameOut := 'exp00201.kom';
-            Database::"C5 VendDiscGroup":
+            Database::"C5 2008 VendDiscGroup":
                 FileNameOut := 'exp00048.kom';
-            Database::"C5 VendTable":
+            Database::"C5 2008 VendTable":
                 FileNameOut := 'exp00041.kom';
-            Database::"C5 VendGroup":
+            Database::"C5 2008 VendGroup":
                 FileNameOut := 'exp00042.kom';
-            Database::"C5 VendTrans":
+            Database::"C5 2008 VendTrans":
                 FileNameOut := 'exp00045.kom';
             Database::"C5 2008 ExchRate":
                 FileNameOut := 'exp00016.kom';
             Database::"C5 2008 InvenBOM":
                 FileNameOut := 'exp00059.kom';
-            Database::"C5 CustContact":
+            Database::"C5 2008 CustContact":
                 FileNameOut := 'exp00177.kom';
             Database::"C5 2008 VendContact":
                 FileNameOut := 'exp00178.kom';

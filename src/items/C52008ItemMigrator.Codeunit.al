@@ -553,7 +553,7 @@ codeunit 51867 "C5 2008 Item Migrator"
 
     local procedure CreateNavCustDiscGroupIfNeeded(C5CustDiscountGroupCode: Code[10])
     var
-        C5CustDiscGroup: Record "C5 CustDiscGroup";
+        C5CustDiscGroup: Record "C5 2008 CustDiscGroup";
         GroupDescription: Text[50];
     begin
         C5CustDiscGroup.SetRange(DiscGroup, C5CustDiscountGroupCode);

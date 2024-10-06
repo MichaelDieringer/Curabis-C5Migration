@@ -174,7 +174,7 @@ codeunit 51866 "C5 2008 CustTable Migrator"
 
     local procedure MigrateCustomerDetails(C5CustTable: Record "C5 2008 CustTable"; CustomerDataMigrationFacadeLocal: Codeunit "Customer Data Migration Facade")
     var
-        C5CustContact: Record "C5 CustContact";
+        C5CustContact: Record "C5 2008 CustContact";
         CurrencyLocal: Record Currency;
         C5HelperFunctions: Codeunit "C5 2008 Helper Functions";
         PostCode: Code[20];
@@ -284,7 +284,7 @@ codeunit 51866 "C5 2008 CustTable Migrator"
 
     local procedure CreatePaymentMethodIfNeeded(C5ProcCodeTxt: Text[10]): Code[10]
     var
-        C5ProcCode: Record "C5 ProcCode";
+        C5ProcCode: Record "C5 2008 ProcCode";
     begin
         if C5ProcCodeTxt = '' then
             exit(C5ProcCodeTxt);
@@ -350,7 +350,7 @@ codeunit 51866 "C5 2008 CustTable Migrator"
 
     local procedure CreateCustomerDiscountGroupIfNeeded(C5DiscGroup: Code[10]): Code[20]
     var
-        C5CustDiscGroup: Record "C5 CustDiscGroup";
+        C5CustDiscGroup: Record "C5 2008 CustDiscGroup";
     begin
         if C5DiscGroup = '' then
             exit(C5DiscGroup);

@@ -11,17 +11,17 @@ table 51801 "C5 2008 Migration Setup"
         {
             Caption = 'Code';
         }
-        field(2; "Conversion of items"; Enum "Conversion type")
+        field(2; "Conversion of items"; Enum "C5 2008 Conversion type")
         {
             Caption = 'Conversion of Items';
             InitValue = 3;
         }
-        field(3; "Conversion of Vendors"; Enum "Conversion type")
+        field(3; "Conversion of Vendors"; Enum "C5 2008 Conversion type")
         {
             Caption = 'Conversion of Vendors';
             InitValue = 3;
         }
-        field(4; "Conversion of Customers"; Enum "Conversion type")
+        field(4; "Conversion of Customers"; Enum "C5 2008 Conversion type")
         {
             Caption = 'Conversion of Customers';
             InitValue = 3;

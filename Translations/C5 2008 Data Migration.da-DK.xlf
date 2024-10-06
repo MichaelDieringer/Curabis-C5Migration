@@ -599,331 +599,331 @@
         </trans-unit>
         <trans-unit id="Table 3137794013 - Field 1115231876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>VAT No.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Momsnr.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTable - Field VatNumber - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3137794013 - Field 1966475228 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>VAT number type</source>
-          <target state="needs-translation"/>
+          <target state="translated">Momsnummer type</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTable - Field VatNumberType - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3137794013 - Field 2090228232 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>XML import</source>
-          <target state="needs-translation"/>
+          <target state="translated">XML import</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTable - Field XMLImport - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3137794013 - Field 397078300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>OIOXML</source>
-          <target state="needs-translation"/>
+          <target state="translated">OIOXML</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTable - Field XMLInvoice - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3137794013 - Field 1325896664 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zip code/City</source>
-          <target state="needs-translation"/>
+          <target state="translated">Postnr./By</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTable - Field ZipCity - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 1267408499 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Account</source>
-          <target state="needs-translation"/>
+          <target state="translated">Konto</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Account - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 2295349996 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Amount in currency</source>
-          <target state="needs-translation"/>
+          <target state="translated">Beløb i valuta</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field AmountCur - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 3876581058 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Amount in LCY</source>
-          <target state="needs-translation"/>
+          <target state="translated">Beløb i LCY</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field AmountMST - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 2913119229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Approved</source>
-          <target state="needs-translation"/>
+          <target state="translated">Godkendt</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Approved - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 2870317932 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Approved by</source>
-          <target state="needs-translation"/>
+          <target state="translated">Godkendt af</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field ApprovedBy - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 829272668 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Budget code</source>
-          <target state="needs-translation"/>
+          <target state="translated">Budgetkode</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field BudgetCode - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 2958367048 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash discount</source>
-          <target state="needs-translation"/>
+          <target state="translated">Kontantrabat</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field CashDisc - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 904159380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash discount</source>
-          <target state="needs-translation"/>
+          <target state="translated">Kontantrabat</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field CashDiscAmount - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 880474188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash disc. date</source>
-          <target state="needs-translation"/>
+          <target state="translated">Kontantrabat dato</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field CashDiscDate - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 2123065725 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cost centre</source>
-          <target state="needs-translation"/>
+          <target state="translated">Omkostningssted</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Centre - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 3561154705 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Currency</source>
-          <target state="needs-translation"/>
+          <target state="translated">Valuta</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Currency - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 4115250733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Date</source>
-          <target state="needs-translation"/>
+          <target state="translated">Dato</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Date_ - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 1651921640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Department</source>
-          <target state="needs-translation"/>
+          <target state="translated">Afdeling</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Department - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 1402313444 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Due</source>
-          <target state="needs-translation"/>
+          <target state="translated">Forfald</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field DueDate - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 2728305728 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Exch. rate</source>
-          <target state="needs-translation"/>
+          <target state="translated">Kurs</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field ExchRate - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 1556238109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Tri rate</source>
-          <target state="needs-translation"/>
+          <target state="translated">Tri kurs</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field ExchRateTri - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 3730610542 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Invoice</source>
-          <target state="needs-translation"/>
+          <target state="translated">Faktura</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field InvoiceNumber - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 1195115940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Last changed</source>
-          <target state="needs-translation"/>
+          <target state="trasnlated">Sidst ændret</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field LastChanged - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Open</source>
-          <target state="needs-translation"/>
+          <target state="translated">Åben</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Open - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 2115553929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Payment ID</source>
-          <target state="needs-translation"/>
+          <target state="translated">Betalings ID</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field PaymentId - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 3105710179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Paym. method</source>
-          <target state="needs-translation"/>
+          <target state="translated">Bet.måde</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field PaymentMode - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 1036884380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Diff. posted</source>
-          <target state="needs-translation"/>
+          <target state="translated">Forsk. bogført</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field PostedDiffAmount - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 1834324738 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purpose</source>
-          <target state="needs-translation"/>
+          <target state="translated">Formål</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Purpose - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 956471723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Row number</source>
-          <target state="needs-translation"/>
+          <target state="translated">Rækkenummer</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field RecId - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 661116396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>RefRecID</source>
-          <target state="needs-translation"/>
+          <target state="translated">RefRecID</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field RefRecID - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 576273000 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Reminder date</source>
-          <target state="needs-translation"/>
+          <target state="translated">Rykkerdato</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field RemindedDate - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 2379558661 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Reminder code</source>
-          <target state="needs-translation"/>
+          <target state="translated">Rykkerkode</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field ReminderCode - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 1640557306 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>RESERVED2</source>
-          <target state="needs-translation"/>
+          <target state="translated">RESERVERET2</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field RESERVED2 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 1002860689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>RESERVED3</source>
-          <target state="needs-translation"/>
+          <target state="translated">RESERVERET3</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field RESERVED3 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 2178282664 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Transaction</source>
-          <target state="needs-translation"/>
+          <target state="translated">Transaktion</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Transaction - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 2488568158 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Entry type</source>
-          <target state="needs-translation"/>
+          <target state="translated">Indtastningstype</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field TransType - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 3766960612 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Text</source>
-          <target state="needs-translation"/>
+          <target state="translated">Tekst</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Txt - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 1495959549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>VAT</source>
-          <target state="needs-translation"/>
+          <target state="translated">Moms</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Vat - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 694672097 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>VAT amount</source>
-          <target state="needs-translation"/>
+          <target state="translated">Momsbeløb</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field VatAmount - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2304011553 - Field 746686244 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Voucher</source>
-          <target state="needs-translation"/>
+          <target state="translated">Bilag</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 CustTrans - Field Voucher - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3732151787 - Field 970416965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>PK</source>
-          <target state="needs-translation"/>
+          <target state="translated">PK</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Data Loader Status - Field PK - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3732151787 - Field 2320701699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Proccessed</source>
-          <target state="needs-translation"/>
+          <target state="translated">Behandlet</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Data Loader Status - Field Proccessed - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3732151787 - Field 245426702 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Total</source>
-          <target state="needs-translation"/>
+          <target state="translated">Total</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Data Loader Status - Field Total - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 91113884 - Field 2461122184 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Delivery</source>
-          <target state="needs-translation"/>
+          <target state="translated">Levering</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Delivery - Field Delivery - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 91113884 - Field 1195115940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Last changed</source>
-          <target state="needs-translation"/>
+          <target state="translated">Sidst ændret</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Delivery - Field LastChanged - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 91113884 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Name</source>
-          <target state="needs-translation"/>
+          <target state="translated">Navn</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Delivery - Field Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 91113884 - Field 956471723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Row number</source>
-          <target state="needs-translation"/>
+          <target state="translated">Rækkenummer</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Delivery - Field RecId - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 944436636 - Field 467735357 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>C4 dept.</source>
-          <target state="needs-translation"/>
+          <target state="translated">C4 afd.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Department - Field C4Department - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 944436636 - Field 1651921640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Department</source>
-          <target state="needs-translation"/>
+          <target state="translated">Afdeling</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Department - Field Department - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 944436636 - Field 1195115940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Last changed</source>
-          <target state="needs-translation"/>
+          <target state="translated">Sidst ændret</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Department - Field LastChanged - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 944436636 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Name</source>
-          <target state="needs-translation"/>
+          <target state="translated">Navn</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Department - Field Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 944436636 - Field 956471723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Row number</source>
-          <target state="needs-translation"/>
+          <target state="translated">Rækkenummer</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Department - Field RecId - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3964239258 - Field 817061969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Address</source>
-          <target state="needs-translation"/>
+          <target state="translated">Adresse1</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Employee - Field Address1 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3964239258 - Field 179365352 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Address</source>
-          <target state="needs-translation"/>
+          <target state="translated">Adresse2</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Employee - Field Address2 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3964239258 - Field 1806268382 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cell phone</source>
-          <target state="needs-translation"/>
+          <target state="translated">Mobiltelefon</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table C5 2008 Employee - Field CellPhone - Property Caption</note>
         </trans-unit>
@@ -4209,6 +4209,78 @@
           <note from="Developer" annotates="general" priority="2">%1 is the current item number</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Item Migrator - NamedType UnitOfMeasureNotSpecifiedErr</note>
         </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 693292261 - NamedType 2296402914" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accounting periods between %1 and %2 created.</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2">%1 = startingdate; %2 = endingdate</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateAccountingPeriods - NamedType AcceountingeperiodCreatedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 693292261 - NamedType 2352242042" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create accounting periods from %1?</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2">%1 = startingdate</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateAccountingPeriods - NamedType CreateAccountingperiodsConfirmationLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 187956757 - NamedType 2915361021" size-unit="char" translate="yes" xml:space="preserve">
+          <source>STD</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateVATPostingGroups - NamedType StdVATProdPostingLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 187956757 - NamedType 1568082423" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Standard VAT</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateVATPostingGroups - NamedType StdVATProdPostingDescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 187956757 - NamedType 1186114678" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DK</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateVATPostingGroups - NamedType DKVATBusPostingLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 187956757 - NamedType 2064065416" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Indland</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateVATPostingGroups - NamedType DKVATBusPostingDescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 187956757 - NamedType 3178167895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EU</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateVATPostingGroups - NamedType EUVATBusPostingLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 187956757 - NamedType 218559309" size-unit="char" translate="yes" xml:space="preserve">
+          <source>European Community</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateVATPostingGroups - NamedType EUVATBusPostingDescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 187956757 - NamedType 3056830983" size-unit="char" translate="yes" xml:space="preserve">
+          <source>OUT</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateVATPostingGroups - NamedType RestVATBusPostingLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 187956757 - NamedType 659311357" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Outside EC</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateVATPostingGroups - NamedType RestVATBusPostingDescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 187956757 - NamedType 722668177" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country VAT setup is not done. Do you want to call Countries/Regions page and start this work?</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateVATPostingGroups - NamedType ConfirmSetupCountryLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4256649250 - Method 187956757 - NamedType 2289132074" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country VAT setup is not done. Please setup countries/regions before creating VAT posting groups.</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit C5 2008 Migration helper - Method CreateVATPostingGroups - NamedType CountryVATSetupErrorLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1834924068 - NamedType 2217288702" size-unit="char" translate="yes" xml:space="preserve">
           <source>Oops, it seems the definition file (exp00000.def) was missing from the zip file.</source>
           <target state="translated">Ups, det ser ud til, at definitionsfilen (exp00000.def) manglede i zip-filen.</target>
@@ -4444,7 +4516,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Company Settings - Action Setups - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1763141878 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>C5 Customer Groups</source>
+          <source>C5 2008  Customer Groups</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CustGroup - Property Caption</note>
@@ -5050,7 +5122,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CustTable - Action C5SalesRep - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1023625587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Customers</source>
+          <source>C5 2008 Customers</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CustTable List - Property Caption</note>
@@ -5482,7 +5554,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CustTable List - Control ZipCity - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2304011553 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>C5 Customer Entries</source>
+          <source>C5 2008 Customer Entries</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 CustTrans - Property Caption</note>
@@ -5824,7 +5896,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Employee - Control ZipCity - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 225009624 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bill of Materials</source>
+          <source>C5 2008 Bill of Materials</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 InvenBOM List - Property Caption</note>
@@ -6004,7 +6076,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 InvenItemGroup - Control SalesDiscAcc - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2690376557 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>C5 Inventory Prices</source>
+          <source>C5 2008 Inventory Prices</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 InvenPrice - Property Caption</note>
@@ -6586,7 +6658,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 InvenTable - Action InvenTrans - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1174812422 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Items</source>
+          <source>C5 2008 Items</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 InvenTable List - Property Caption</note>
@@ -6970,7 +7042,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 InvenTable List - Control WarnNegativeInventory - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2393835976 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>C5 Inventory Entries</source>
+          <source>C5 2008 Inventory Entries</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 InvenTrans - Property Caption</note>
@@ -7534,7 +7606,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 LedTable - Control VatBlocked - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 639782967 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Accounts</source>
+          <source>C5 2008 Accounts</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 LedTable List - Property Caption</note>
@@ -7708,7 +7780,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 LedTable List - Control VatBlocked - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1723889667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>C5 Ledger Entries</source>
+          <source>C5 2008 edger Entries</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 LedTrans List - Property Caption</note>
@@ -7870,7 +7942,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 LedTrans List - Control Voucher - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1255536041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>2008 Migration Setup</source>
+          <source>C5 2008 Migration Setup</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Migration Setup - Property Caption</note>
@@ -7935,6 +8007,18 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Migration Setup - Action CreateAccountingPeriods - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1255536041 - Action 187956757 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create VAT Posting Groups for the company.</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Migration Setup - Action CreateVATPostingGroups - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1255536041 - Action 187956757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create VAT Posting Groups</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Migration Setup - Action CreateVATPostingGroups - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2750792914 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>C5 Payment</source>
           <target state="needs-translation"/>
@@ -7972,7 +8056,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 Payment - Control UnitCode - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1542737775 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>C5 Vendor Contact Persons</source>
+          <source>C5 2008 Vendor Contact Persons</source>
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 2008 VendContact - Property Caption</note>
@@ -8212,8 +8296,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 ProcCode - Control Type - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2602790647 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" maxwidth="0">
-          <source>C5 Vendor Discount Groups</source>
-          <target state="translated">C5-kreditorrabatgrupper</target>
+          <source>C5 2008 Vendor Discount Groups</source>
+          <target state="needs-adaptation">C5-kreditorrabatgrupper</target>
+          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 VendDiscGroup - Property Caption</note>
         </trans-unit>
@@ -8230,8 +8315,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 VendDiscGroup - Control DiscGroup - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1893530188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" maxwidth="0">
-          <source>C5 Vendor Groups</source>
-          <target state="translated">C5-kreditorgrupper</target>
+          <source>C5 2008 Vendor Groups</source>
+          <target state="needs-adaptation">C5-kreditorgrupper</target>
+          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 VendGroup - Property Caption</note>
         </trans-unit>
@@ -8824,8 +8910,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 VendTable - Action C5VendTrans - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2536447293 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" maxwidth="0">
-          <source>Vendors</source>
-          <target state="translated">Leverandører (Kreditorer)</target>
+          <source>C5 2008 Vendors</source>
+          <target state="needs-adaptation">Leverandører (Kreditorer)</target>
+          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 VendTable List - Property Caption</note>
         </trans-unit>
@@ -9268,8 +9355,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 VendTable List - Control ZipCity - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1668449495 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" maxwidth="0">
-          <source>C5 Vendor Entries</source>
-          <target state="translated">C5-kreditorposter</target>
+          <source>C5 2008 Vendor Entries</source>
+          <target state="needs-adaptation">C5-kreditorposter</target>
+          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page C5 VendTrans - Property Caption</note>
         </trans-unit>
@@ -9495,6 +9583,12 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension C5 2008 Data Migr. Overv. Ext. - Control ProgressGroup - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2218226619 - Field 2971014054 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4148176377">
+          <source>VAT Calculation Type</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CountryRegionExt - Field VAT Calculation Type - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 2720438380 - EnumValue 258247443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Base and Transactions</source>
           <target state="needs-translation"/>
@@ -9512,6 +9606,24 @@
           <target state="needs-translation"/>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Conversion type - EnumValue Skip - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2534478843 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum VAT Calulation type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2534478843 - EnumValue 3464206940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EU</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum VAT Calulation type - EnumValue EU - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2534478843 - EnumValue 1267940447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Outside</source>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum VAT Calulation type - EnumValue Outside - Property Caption</note>
         </trans-unit>
       </group>
     </body>
